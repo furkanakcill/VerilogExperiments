@@ -1,0 +1,56 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Oct 20 13:42:02 2022
+# Process ID: 12180
+# Current directory: C:/SSTU Dosyalar/project_experiment_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18880 C:\SSTU Dosyalar\project_experiment_1\project_experiment_1.xpr
+# Log file: C:/SSTU Dosyalar/project_experiment_1/vivado.log
+# Journal file: C:/SSTU Dosyalar/project_experiment_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.xpr}
+open_run impl_1
+open_run synth_1 -name synth_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.runs/impl_1/TOP_Module.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.runs/impl_1/TOP_Module.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+current_design impl_1
+synth_design -rtl -name rtl_1
+current_design impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -datasheet -name timing_1
+current_design synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -datasheet -name timing_1
+current_design impl_1
+report_utilization -name utilization_1
+launch_simulation -mode post-synthesis -type timing
+current_design impl_1
+launch_simulation -mode post-implementation -type timing
+launch_simulation
+source TOP_Module_tb.tcl
+close_sim
+launch_simulation
+source TOP_Module_tb.tcl
+close_sim
+launch_simulation
+source TOP_Module_tb.tcl
+close_sim
+launch_simulation
+source TOP_Module_tb.tcl
+close_sim
+launch_simulation
+source TOP_Module_tb.tcl
+close_sim
+launch_simulation
+source TOP_Module_tb.tcl
+launch_simulation -mode post-synthesis -type timing
+close_sim

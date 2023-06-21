@@ -1,0 +1,240 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Jan  7 19:49:07 2023
+# Process ID: 8924
+# Current directory: C:/SSTU Dosyalar/project_final
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23248 C:\SSTU Dosyalar\project_final\project_final.xpr
+# Log file: C:/SSTU Dosyalar/project_final/vivado.log
+# Journal file: C:/SSTU Dosyalar/project_final\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/SSTU Dosyalar/project_final/project_final.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 723.898 ; gain = 109.117
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: TOP
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1121.617 ; gain = 172.551
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TOP' [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/TOP.v:3]
+INFO: [Synth 8-6157] synthesizing module 'CU' [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/CU.v:23]
+	Parameter Step0 bound to: 0 - type: integer 
+	Parameter Step1 bound to: 1 - type: integer 
+	Parameter Step2 bound to: 2 - type: integer 
+	Parameter Step3 bound to: 3 - type: integer 
+	Parameter Step4 bound to: 4 - type: integer 
+	Parameter Step5 bound to: 5 - type: integer 
+	Parameter Step6 bound to: 6 - type: integer 
+	Parameter Step7 bound to: 7 - type: integer 
+	Parameter Step8 bound to: 8 - type: integer 
+	Parameter Step9 bound to: 9 - type: integer 
+	Parameter Step10 bound to: 10 - type: integer 
+	Parameter Step11 bound to: 11 - type: integer 
+	Parameter Step12 bound to: 12 - type: integer 
+	Parameter Step13 bound to: 13 - type: integer 
+	Parameter Step14 bound to: 14 - type: integer 
+	Parameter Step15 bound to: 15 - type: integer 
+	Parameter Step16 bound to: 16 - type: integer 
+	Parameter Step17 bound to: 17 - type: integer 
+	Parameter Step18 bound to: 18 - type: integer 
+	Parameter Step19 bound to: 19 - type: integer 
+	Parameter Step20 bound to: 20 - type: integer 
+	Parameter Step21 bound to: 21 - type: integer 
+	Parameter Step22 bound to: 22 - type: integer 
+	Parameter Step23 bound to: 23 - type: integer 
+	Parameter Step24 bound to: 24 - type: integer 
+	Parameter Step25 bound to: 25 - type: integer 
+	Parameter Step26 bound to: 26 - type: integer 
+	Parameter Step27 bound to: 27 - type: integer 
+	Parameter Step28 bound to: 28 - type: integer 
+	Parameter Step29 bound to: 29 - type: integer 
+	Parameter Step30 bound to: 30 - type: integer 
+	Parameter Step31 bound to: 31 - type: integer 
+	Parameter Step32 bound to: 32 - type: integer 
+	Parameter Step33 bound to: 33 - type: integer 
+	Parameter Step34 bound to: 34 - type: integer 
+	Parameter Step35 bound to: 35 - type: integer 
+	Parameter Step36 bound to: 36 - type: integer 
+	Parameter Step37 bound to: 37 - type: integer 
+	Parameter Step38 bound to: 38 - type: integer 
+	Parameter Step39 bound to: 39 - type: integer 
+	Parameter Step40 bound to: 40 - type: integer 
+	Parameter writeNtoR1 bound to: 41 - type: integer 
+WARNING: [Synth 8-5788] Register Busy_reg in module CU is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/CU.v:46]
+WARNING: [Synth 8-5788] Register WE_reg in module CU is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/CU.v:47]
+WARNING: [Synth 8-5788] Register CUconst_reg in module CU is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/CU.v:56]
+WARNING: [Synth 8-5788] Register InMuxAdd_reg in module CU is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/CU.v:57]
+WARNING: [Synth 8-5788] Register RegAdd_reg in module CU is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/CU.v:59]
+WARNING: [Synth 8-5788] Register OutMuxAdd_reg in module CU is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/CU.v:61]
+WARNING: [Synth 8-5788] Register InsSel_reg in module CU is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/CU.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'CU' (1#1) [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/CU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/ALU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'parametric_RCA' [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/imports/new/arithmetic_circuits.v:62]
+	Parameter SIZE bound to: 8 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/imports/new/arithmetic_circuits.v:69]
+INFO: [Synth 8-6157] synthesizing module 'FA' [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/imports/new/arithmetic_circuits.v:34]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/imports/new/arithmetic_circuits.v:38]
+INFO: [Synth 8-6157] synthesizing module 'HA' [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/imports/new/arithmetic_circuits.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'HA' (2#1) [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/imports/new/arithmetic_circuits.v:24]
+INFO: [Synth 8-6157] synthesizing module 'OR' [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/imports/new/SSI_Library.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'OR' (3#1) [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/imports/new/SSI_Library.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'FA' (4#1) [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/imports/new/arithmetic_circuits.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'parametric_RCA' (5#1) [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/imports/new/arithmetic_circuits.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (6#1) [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/ALU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'RB' [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/RB.v:3]
+INFO: [Synth 8-6157] synthesizing module 'register' [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/RB.v:94]
+INFO: [Synth 8-6155] done synthesizing module 'register' (7#1) [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/RB.v:94]
+INFO: [Synth 8-6155] done synthesizing module 'RB' (8#1) [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/RB.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'TOP' (9#1) [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/TOP.v:3]
+WARNING: [Synth 8-3331] design CU has unconnected port CO
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1191.668 ; gain = 242.602
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1191.668 ; gain = 242.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1191.668 ; gain = 242.602
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1295.195 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 1329.617 ; gain = 380.551
+24 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 1329.617 ; gain = 590.566
+export_ip_user_files -of_objects  [get_files {{C:/Users/akcil/OneDrive/Masaüstü/Digital Sys. Dsg. App/Delivarables/final_project/archive_project_summary.txt}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/akcil/OneDrive/Masaüstü/Digital Sys. Dsg. App/Delivarables/final_project/archive_project_summary.txt}}
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1393.199 ; gain = 25.035
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TOP' [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/TOP.v:3]
+INFO: [Synth 8-6157] synthesizing module 'CU' [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/CU.v:23]
+	Parameter Step0 bound to: 0 - type: integer 
+	Parameter Step1 bound to: 1 - type: integer 
+	Parameter Step2 bound to: 2 - type: integer 
+	Parameter Step3 bound to: 3 - type: integer 
+	Parameter Step4 bound to: 4 - type: integer 
+	Parameter Step5 bound to: 5 - type: integer 
+	Parameter Step6 bound to: 6 - type: integer 
+	Parameter Step7 bound to: 7 - type: integer 
+	Parameter Step8 bound to: 8 - type: integer 
+	Parameter Step9 bound to: 9 - type: integer 
+	Parameter Step10 bound to: 10 - type: integer 
+	Parameter Step11 bound to: 11 - type: integer 
+	Parameter Step12 bound to: 12 - type: integer 
+	Parameter Step13 bound to: 13 - type: integer 
+	Parameter Step14 bound to: 14 - type: integer 
+	Parameter Step15 bound to: 15 - type: integer 
+	Parameter Step16 bound to: 16 - type: integer 
+	Parameter Step17 bound to: 17 - type: integer 
+	Parameter Step18 bound to: 18 - type: integer 
+	Parameter Step19 bound to: 19 - type: integer 
+	Parameter Step20 bound to: 20 - type: integer 
+	Parameter Step21 bound to: 21 - type: integer 
+	Parameter Step22 bound to: 22 - type: integer 
+	Parameter Step23 bound to: 23 - type: integer 
+	Parameter Step24 bound to: 24 - type: integer 
+	Parameter Step25 bound to: 25 - type: integer 
+	Parameter Step26 bound to: 26 - type: integer 
+	Parameter Step27 bound to: 27 - type: integer 
+	Parameter Step28 bound to: 28 - type: integer 
+	Parameter Step29 bound to: 29 - type: integer 
+	Parameter Step30 bound to: 30 - type: integer 
+	Parameter Step31 bound to: 31 - type: integer 
+	Parameter Step32 bound to: 32 - type: integer 
+	Parameter Step33 bound to: 33 - type: integer 
+	Parameter Step34 bound to: 34 - type: integer 
+	Parameter Step35 bound to: 35 - type: integer 
+	Parameter Step36 bound to: 36 - type: integer 
+	Parameter Step37 bound to: 37 - type: integer 
+	Parameter Step38 bound to: 38 - type: integer 
+	Parameter Step39 bound to: 39 - type: integer 
+	Parameter Step40 bound to: 40 - type: integer 
+	Parameter writeNtoR1 bound to: 41 - type: integer 
+WARNING: [Synth 8-5788] Register Busy_reg in module CU is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/CU.v:46]
+WARNING: [Synth 8-5788] Register WE_reg in module CU is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/CU.v:47]
+WARNING: [Synth 8-5788] Register CUconst_reg in module CU is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/CU.v:56]
+WARNING: [Synth 8-5788] Register InMuxAdd_reg in module CU is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/CU.v:57]
+WARNING: [Synth 8-5788] Register RegAdd_reg in module CU is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/CU.v:59]
+WARNING: [Synth 8-5788] Register OutMuxAdd_reg in module CU is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/CU.v:61]
+WARNING: [Synth 8-5788] Register InsSel_reg in module CU is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/CU.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'CU' (1#1) [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/CU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/ALU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'parametric_RCA' [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/imports/new/arithmetic_circuits.v:44]
+	Parameter SIZE bound to: 8 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/imports/new/arithmetic_circuits.v:51]
+INFO: [Synth 8-6157] synthesizing module 'FA' [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/imports/new/arithmetic_circuits.v:16]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/imports/new/arithmetic_circuits.v:20]
+INFO: [Synth 8-6157] synthesizing module 'HA' [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/imports/new/arithmetic_circuits.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'HA' (2#1) [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/imports/new/arithmetic_circuits.v:6]
+INFO: [Synth 8-6157] synthesizing module 'OR' [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/imports/new/SSI_Library.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'OR' (3#1) [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/imports/new/SSI_Library.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'FA' (4#1) [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/imports/new/arithmetic_circuits.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'parametric_RCA' (5#1) [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/imports/new/arithmetic_circuits.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (6#1) [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/ALU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'RB' [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/RB.v:3]
+INFO: [Synth 8-6157] synthesizing module 'register' [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/RB.v:94]
+INFO: [Synth 8-6155] done synthesizing module 'register' (7#1) [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/RB.v:94]
+INFO: [Synth 8-6155] done synthesizing module 'RB' (8#1) [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/RB.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'TOP' (9#1) [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/TOP.v:3]
+WARNING: [Synth 8-3331] design CU has unconnected port CO
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1431.012 ; gain = 62.848
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1431.012 ; gain = 62.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1431.012 ; gain = 62.848
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1494.305 ; gain = 126.141
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Jan  7 20:14:53 2023...

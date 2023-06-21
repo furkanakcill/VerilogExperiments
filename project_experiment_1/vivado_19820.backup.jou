@@ -1,0 +1,208 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Oct 16 12:58:12 2022
+# Process ID: 19820
+# Current directory: C:/SSTU Dosyalar/project_experiment_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15016 C:\SSTU Dosyalar\project_experiment_1\project_experiment_1.xpr
+# Log file: C:/SSTU Dosyalar/project_experiment_1/vivado.log
+# Journal file: C:/SSTU Dosyalar/project_experiment_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+synth_design -rtl -name rtl_1
+refresh_design
+export_ip_user_files -of_objects  [get_files {{C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sim_1/new/Top_Module_tb.v}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sim_1/new/Top_Module_tb.v}}
+file delete -force {C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sim_1/new/Top_Module_tb.v}
+export_ip_user_files -of_objects  [get_files {{C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/Top_ Module.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/Top_ Module.v}}
+file delete -force {C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/Top_ Module.v}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sim_1/new/AND_tb.v} w ]
+add_files -fileset sim_1 {{C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sim_1/new/AND_tb.v}}
+update_compile_order -fileset sim_1
+refresh_design
+update_compile_order -fileset sim_1
+launch_simulation
+open_wave_config {C:/SSTU Dosyalar/project_experiment_1/AND_tb_time_synth.wcfg}
+source AND_tb.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+launch_simulation -mode post-synthesis -type timing
+open_wave_config {C:/SSTU Dosyalar/project_experiment_1/AND_tb_time_synth.wcfg}
+source AND_tb.tcl
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -datasheet -name timing_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+close_design
+open_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -datasheet -name timing_1
+current_design impl_1
+refresh_design
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -datasheet -name timing_1
+report_utilization -name utilization_1
+launch_simulation
+close_sim
+close_sim
+launch_simulation
+open_wave_config {C:/SSTU Dosyalar/project_experiment_1/AND_tb_time_synth.wcfg}
+source OR_tb.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/SSTU Dosyalar/project_experiment_1/AND_tb_time_synth.wcfg}
+source OR_tb.tcl
+export_ip_user_files -of_objects  [get_files C:/Users/akcil/Downloads/Nexys-4-DDR-Master.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 C:/Users/akcil/Downloads/Nexys-4-DDR-Master.xdc
+close_sim
+launch_simulation
+open_wave_config {C:/SSTU Dosyalar/project_experiment_1/AND_tb_time_synth.wcfg}
+source OR_tb.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/SSTU Dosyalar/project_experiment_1/AND_tb_time_synth.wcfg}
+source OR_tb.tcl
+current_design rtl_1
+refresh_design
+close_sim
+launch_simulation
+open_wave_config {C:/SSTU Dosyalar/project_experiment_1/AND_tb_time_synth.wcfg}
+source OR_tb.tcl
+close_sim
+export_ip_user_files -of_objects  [get_files {{C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sim_1/new/AND_tb.v}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sim_1/new/AND_tb.v}}
+file delete -force {C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sim_1/new/AND_tb.v}
+close [ open {C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/TOP_Module.v} w ]
+add_files {{C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/TOP_Module.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sim_1/new/OR_tbb.v} w ]
+add_files -fileset sim_1 {{C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sim_1/new/OR_tbb.v}}
+update_compile_order -fileset sim_1
+refresh_design
+launch_simulation
+export_ip_user_files -of_objects  [get_files {{C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/TOP_Module.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/TOP_Module.v}}
+file delete -force {C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/TOP_Module.v}
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files {{C:/SSTU Dosyalar/project_experiment_1/AND_tb_time_synth.wcfg}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/SSTU Dosyalar/project_experiment_1/AND_tb_time_synth.wcfg}}
+export_ip_user_files -of_objects  [get_files {{C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sim_1/new/OR_tbb.v}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sim_1/new/OR_tbb.v}}
+file delete -force {C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sim_1/new/OR_tbb.v}
+refresh_design
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sim_1/new/OR_tbb.v} w ]
+add_files -fileset sim_1 {{C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sim_1/new/OR_tbb.v}}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+source OR_tb.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+current_design synth_1
+close_design
+open_run synth_1 -name synth_1
+export_ip_user_files -of_objects  [get_files {{C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sim_1/new/OR_tbb.v}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sim_1/new/OR_tbb.v}}
+file delete -force {C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sim_1/new/OR_tbb.v}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sim_1/new/NOT_tb.v} w ]
+add_files -fileset sim_1 {{C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sim_1/new/NOT_tb.v}}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+current_design rtl_1
+refresh_design
+launch_simulation
+close_sim
+launch_simulation
+source NOT_tb.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+current_design synth_1
+close_design
+open_run synth_1 -name synth_1
+current_design rtl_1
+refresh_design
+launch_simulation
+close_sim
+launch_simulation
+source NOR_tb.tcl
+close_sim
+reset_run synth_1
+launch_simulation
+source NOR_tb.tcl
+close_sim
+launch_simulation
+source NOR_tb.tcl
+close_sim
+refresh_design
+launch_simulation
+source NAND_tb.tcl
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+current_design synth_1
+close_design
+open_run synth_1 -name synth_1
+current_design rtl_1
+refresh_design
+launch_simulation
+close_sim
+launch_simulation
+source EXOR_tb.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+current_design synth_1
+close_design
+open_run synth_1 -name synth_1
+close_design
+launch_simulation
+close_sim
+launch_simulation
+source EXNOR_tb.tcl
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+close_sim
+launch_simulation
+launch_simulation
+source TRI_tb.tcl
+close_sim
+launch_simulation
+source TRI_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source TRI_tb.tcl
+close_sim
+launch_simulation
+source TRI_tb.tcl
+synth_design -rtl -name rtl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+current_design synth_1
+close_design
+open_run synth_1 -name synth_1
+close_sim

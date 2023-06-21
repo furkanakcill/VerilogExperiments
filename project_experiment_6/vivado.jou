@@ -1,0 +1,116 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Dec  1 12:40:00 2022
+# Process ID: 16232
+# Current directory: C:/SSTU Dosyalar/project_experiment_6
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20592 C:\SSTU Dosyalar\project_experiment_6\project_experiment_6.xpr
+# Log file: C:/SSTU Dosyalar/project_experiment_6/vivado.log
+# Journal file: C:/SSTU Dosyalar/project_experiment_6\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/SSTU Dosyalar/project_experiment_6/project_experiment_6.xpr}
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [get_hw_devices xc7a50t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a50t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property PROGRAM.FILE {C:/SSTU Dosyalar/project_experiment_6/fsm_1_bit_stream.bit} [get_hw_devices xc7a50t_0]
+program_hw_devices [get_hw_devices xc7a50t_0]
+close_hw
+reset_run synth_1
+synth_design -rtl -name rtl_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw
+launch_simulation
+source FSM1_tb.tcl
+connect_hw_server
+open_hw_target
+current_hw_device [get_hw_devices xc7a50t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a50t_0] 0]
+file copy -force {C:/SSTU Dosyalar/project_experiment_6/project_experiment_6.runs/impl_1/FSM1.bit} {C:/SSTU Dosyalar/project_experiment_6/fsm_1.bit}
+set_property PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a50t_0]
+set_property PROGRAM.FILE {C:/SSTU Dosyalar/project_experiment_6/fsm_1.bit} [get_hw_devices xc7a50t_0]
+program_hw_devices [get_hw_devices xc7a50t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a50t_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+open_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+file copy -force {C:/SSTU Dosyalar/project_experiment_6/project_experiment_6.runs/impl_1/FSM1.bit} {C:/SSTU Dosyalar/project_experiment_6/fsm_1.bit}
+open_hw
+close_hw
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top FSM2 [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+close_sim
+launch_simulation
+source FSM1_tb.tcl
+restart
+run 1 us
+close_sim
+close_design
+close_design
+launch_simulation
+source FSM1_tb.tcl
+synth_design -rtl -name rtl_1
+refresh_design
+refresh_design
+close_sim
+launch_simulation
+source FSM1_tb.tcl
+close_sim
+close_design
+launch_simulation
+source FSM1_tb.tcl
+restart
+run all
+restart
+run 1 us
+run 1 us
+run all
+close_sim
+launch_simulation
+source FSM1_tb.tcl
+restart
+run all
+restart
+run all
+close_sim
+launch_simulation
+source FSM1_tb.tcl
+close_sim
+launch_simulation
+source FSM1_tb.tcl
+close_sim
+launch_simulation
+source FSM1_tb.tcl
+close_sim

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Dec 31 12:07:51 2022
+# Process ID: 19144
+# Current directory: C:/SSTU Dosyalar/project_final
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17216 C:\SSTU Dosyalar\project_final\project_final.xpr
+# Log file: C:/SSTU Dosyalar/project_final/vivado.log
+# Journal file: C:/SSTU Dosyalar/project_final\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/SSTU Dosyalar/project_final/project_final.xpr}
+update_compile_order -fileset sources_1

@@ -1,0 +1,505 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Dec 11 13:01:57 2022
+# Process ID: 4956
+# Current directory: C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.runs/synth_1
+# Command line: vivado.exe -log MULTS.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MULTS.tcl
+# Log file: C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.runs/synth_1/MULTS.vds
+# Journal file: C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source MULTS.tcl -notrace
+Command: synth_design -top MULTS -part xc7a50ticsg324-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a50ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a50ti'
+INFO: [Device 21-403] Loading part xc7a50ticsg324-1L
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5864 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 725.598 ; gain = 176.684
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'MULTS' [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/sources_1/new/MULTS.v:4]
+INFO: [Synth 8-6157] synthesizing module 'CLA_16_bit' [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/sources_1/new/CLA.v:3]
+INFO: [Synth 8-6157] synthesizing module 'CLA' [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/sources_1/new/CLA.v:18]
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/sources_1/new/CLA.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'CLA' (1#1) [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/sources_1/new/CLA.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'CLA_16_bit' (2#1) [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/sources_1/new/CLA.v:3]
+WARNING: [Synth 8-6014] Unused sequential element A_reg_reg was removed.  [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/sources_1/new/MULTS.v:37]
+WARNING: [Synth 8-6014] Unused sequential element X_reg_reg was removed.  [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/sources_1/new/MULTS.v:38]
+WARNING: [Synth 8-6014] Unused sequential element select2_reg was removed.  [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/sources_1/new/MULTS.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'MULTS' (3#1) [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/sources_1/new/MULTS.v:4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 788.922 ; gain = 240.008
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 788.922 ; gain = 240.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 788.922 ; gain = 240.008
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: c1). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: c3). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: c6). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum1[0]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum1[10]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum1[11]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum1[12]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum1[13]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum1[14]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum1[15]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum1[1]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum1[2]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum1[3]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum1[4]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum1[5]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum1[6]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum1[7]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum1[8]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum1[9]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum2[0]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum2[10]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum2[11]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum2[12]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum2[13]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum2[14]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum2[15]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum2[1]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum2[2]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum2[3]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum2[4]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum2[5]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum2[6]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum2[7]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum2[8]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum2[9]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum3[0]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum3[10]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum3[11]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum3[12]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum3[13]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum3[14]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum3[15]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum3[1]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum3[2]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum3[3]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum3[4]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum3[5]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum3[6]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum3[7]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum3[8]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum3[9]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum4[0]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum4[10]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum4[11]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum4[12]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum4[13]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum4[14]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum4[15]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum4[1]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum4[2]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum4[3]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum4[4]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum4[5]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum4[6]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum4[7]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum4[8]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum4[9]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum5[0]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum5[10]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum5[11]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum5[12]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum5[13]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum5[14]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum5[15]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum5[1]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum5[2]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum5[3]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum5[4]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum5[5]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum5[6]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum5[7]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum5[8]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum5[9]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum6[0]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum6[10]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum6[11]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum6[12]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum6[13]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum6[14]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum6[15]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum6[1]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum6[2]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum6[3]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum6[4]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum6[5]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum6[6]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum6[7]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum6[8]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum6[9]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+WARNING: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: sum7[0]). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+INFO: [Common 17-14] Message 'Vivado 12-4777' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc:50]
+Finished Parsing XDC File [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/MULTS_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/MULTS_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 906.211 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 906.211 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 906.211 ; gain = 357.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a50ticsg324-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 906.211 ; gain = 357.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+WARNING: set_property CLOCK_DEDICATED_ROUTE could not find object (constraint file  {C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc}, line 50).
+WARNING: set_property CLOCK_DEDICATED_ROUTE could not find object (constraint file  {C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/constrs_1/imports/Downloads/Nexys-A7-50T-Master_first.xdc}, line 50).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 906.211 ; gain = 357.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 906.211 ; gain = 357.297
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 224   
++---Registers : 
+	               16 Bit    Registers := 8     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 15    
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module MULTS 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 8     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 15    
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module CLA 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 8     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'PP_reg[7][0]' (FDRE) to 'PP_reg[7][1]'
+INFO: [Synth 8-3886] merging instance 'PP_reg[6][0]' (FDRE) to 'PP_reg[6][1]'
+INFO: [Synth 8-3886] merging instance 'PP_reg[5][0]' (FDRE) to 'PP_reg[5][1]'
+INFO: [Synth 8-3886] merging instance 'PP_reg[4][0]' (FDRE) to 'PP_reg[4][1]'
+INFO: [Synth 8-3886] merging instance 'PP_reg[3][0]' (FDRE) to 'PP_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'PP_reg[2][0]' (FDRE) to 'PP_reg[2][1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PP_reg[1][0] )
+INFO: [Synth 8-3886] merging instance 'PP_reg[7][1]' (FDRE) to 'PP_reg[7][2]'
+INFO: [Synth 8-3886] merging instance 'PP_reg[6][1]' (FDRE) to 'PP_reg[6][2]'
+INFO: [Synth 8-3886] merging instance 'PP_reg[5][1]' (FDRE) to 'PP_reg[5][2]'
+INFO: [Synth 8-3886] merging instance 'PP_reg[4][1]' (FDRE) to 'PP_reg[4][2]'
+INFO: [Synth 8-3886] merging instance 'PP_reg[3][1]' (FDRE) to 'PP_reg[3][2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PP_reg[2][1] )
+INFO: [Synth 8-3886] merging instance 'PP_reg[7][2]' (FDRE) to 'PP_reg[7][3]'
+INFO: [Synth 8-3886] merging instance 'PP_reg[6][2]' (FDRE) to 'PP_reg[6][3]'
+INFO: [Synth 8-3886] merging instance 'PP_reg[5][2]' (FDRE) to 'PP_reg[5][3]'
+INFO: [Synth 8-3886] merging instance 'PP_reg[4][2]' (FDRE) to 'PP_reg[4][3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PP_reg[3][2] )
+INFO: [Synth 8-3886] merging instance 'PP_reg[7][3]' (FDRE) to 'PP_reg[7][4]'
+INFO: [Synth 8-3886] merging instance 'PP_reg[6][3]' (FDRE) to 'PP_reg[6][4]'
+INFO: [Synth 8-3886] merging instance 'PP_reg[5][3]' (FDRE) to 'PP_reg[5][4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PP_reg[4][3] )
+INFO: [Synth 8-3886] merging instance 'PP_reg[7][4]' (FDRE) to 'PP_reg[7][5]'
+INFO: [Synth 8-3886] merging instance 'PP_reg[6][4]' (FDRE) to 'PP_reg[6][5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PP_reg[5][4] )
+INFO: [Synth 8-3886] merging instance 'PP_reg[7][5]' (FDRE) to 'PP_reg[7][6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PP_reg[6][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PP_reg[7][6] )
+INFO: [Synth 8-3886] merging instance 'PP_reg[1][9]' (FDRE) to 'PP_reg[1][10]'
+INFO: [Synth 8-3886] merging instance 'PP_reg[2][10]' (FDRE) to 'PP_reg[2][11]'
+INFO: [Synth 8-3886] merging instance 'PP_reg[1][10]' (FDRE) to 'PP_reg[1][11]'
+INFO: [Synth 8-3886] merging instance 'PP_reg[3][11]' (FDRE) to 'PP_reg[3][12]'
+INFO: [Synth 8-3886] merging instance 'PP_reg[2][11]' (FDRE) to 'PP_reg[2][12]'
+INFO: [Synth 8-3886] merging instance 'PP_reg[1][11]' (FDRE) to 'PP_reg[1][12]'
+INFO: [Synth 8-3886] merging instance 'PP_reg[4][12]' (FDRE) to 'PP_reg[4][13]'
+INFO: [Synth 8-3886] merging instance 'PP_reg[3][12]' (FDRE) to 'PP_reg[3][13]'
+INFO: [Synth 8-3886] merging instance 'PP_reg[2][12]' (FDRE) to 'PP_reg[2][13]'
+INFO: [Synth 8-3886] merging instance 'PP_reg[1][12]' (FDRE) to 'PP_reg[1][13]'
+INFO: [Synth 8-3886] merging instance 'PP_reg[5][13]' (FDRE) to 'PP_reg[5][14]'
+INFO: [Synth 8-3886] merging instance 'PP_reg[4][13]' (FDRE) to 'PP_reg[4][14]'
+INFO: [Synth 8-3886] merging instance 'PP_reg[3][13]' (FDRE) to 'PP_reg[3][14]'
+INFO: [Synth 8-3886] merging instance 'PP_reg[2][13]' (FDRE) to 'PP_reg[2][14]'
+INFO: [Synth 8-3886] merging instance 'PP_reg[1][13]' (FDRE) to 'PP_reg[1][14]'
+INFO: [Synth 8-3886] merging instance 'PP_reg[6][14]' (FDRE) to 'PP_reg[6][15]'
+INFO: [Synth 8-3886] merging instance 'PP_reg[5][14]' (FDRE) to 'PP_reg[5][15]'
+INFO: [Synth 8-3886] merging instance 'PP_reg[4][14]' (FDRE) to 'PP_reg[4][15]'
+INFO: [Synth 8-3886] merging instance 'PP_reg[3][14]' (FDRE) to 'PP_reg[3][15]'
+INFO: [Synth 8-3886] merging instance 'PP_reg[2][14]' (FDRE) to 'PP_reg[2][15]'
+INFO: [Synth 8-3886] merging instance 'PP_reg[1][14]' (FDRE) to 'PP_reg[1][15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PP_reg[7][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PP_reg[6][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PP_reg[5][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PP_reg[4][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PP_reg[3][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PP_reg[2][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PP_reg[1][15] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 906.211 ; gain = 357.297
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 906.211 ; gain = 357.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 906.211 ; gain = 357.297
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 907.555 ; gain = 358.641
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 913.328 ; gain = 364.414
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 913.328 ; gain = 364.414
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 913.328 ; gain = 364.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 913.328 ; gain = 364.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 913.328 ; gain = 364.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 913.328 ; gain = 364.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |    73|
+|3     |LUT2 |    86|
+|4     |LUT3 |    35|
+|5     |LUT4 |   120|
+|6     |LUT5 |    28|
+|7     |LUT6 |    52|
+|8     |FDRE |    81|
+|9     |IBUF |    19|
+|10    |OBUF |    16|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------------+------+
+|      |Instance |Module       |Cells |
++------+---------+-------------+------+
+|1     |top      |             |   511|
+|2     |  CLA1   |CLA_16_bit   |    75|
+|3     |    CLA1 |CLA_29       |    13|
+|4     |    CLA2 |CLA_30       |    21|
+|5     |    CLA3 |CLA_31       |    20|
+|6     |    CLA4 |CLA_32       |    21|
+|7     |  CLA2   |CLA_16_bit_0 |    59|
+|8     |    CLA1 |CLA_25       |    21|
+|9     |    CLA2 |CLA_26       |    13|
+|10    |    CLA3 |CLA_27       |    12|
+|11    |    CLA4 |CLA_28       |    13|
+|12    |  CLA3   |CLA_16_bit_1 |    75|
+|13    |    CLA1 |CLA_21       |    14|
+|14    |    CLA2 |CLA_22       |    20|
+|15    |    CLA3 |CLA_23       |    21|
+|16    |    CLA4 |CLA_24       |    20|
+|17    |  CLA4   |CLA_16_bit_2 |    59|
+|18    |    CLA1 |CLA_17       |    22|
+|19    |    CLA2 |CLA_18       |    12|
+|20    |    CLA3 |CLA_19       |    13|
+|21    |    CLA4 |CLA_20       |    12|
+|22    |  CLA5   |CLA_16_bit_3 |    52|
+|23    |    CLA1 |CLA_13       |    13|
+|24    |    CLA2 |CLA_14       |    13|
+|25    |    CLA3 |CLA_15       |    13|
+|26    |    CLA4 |CLA_16       |    13|
+|27    |  CLA6   |CLA_16_bit_4 |    20|
+|28    |    CLA1 |CLA_9        |     5|
+|29    |    CLA2 |CLA_10       |     5|
+|30    |    CLA3 |CLA_11       |     5|
+|31    |    CLA4 |CLA_12       |     5|
+|32    |  CLA7   |CLA_16_bit_5 |    36|
+|33    |    CLA1 |CLA          |     9|
+|34    |    CLA2 |CLA_6        |     9|
+|35    |    CLA3 |CLA_7        |     9|
+|36    |    CLA4 |CLA_8        |     9|
++------+---------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 913.328 ; gain = 364.414
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 913.328 ; gain = 247.125
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 913.328 ; gain = 364.414
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 926.297 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+74 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 926.297 ; gain = 629.633
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 926.297 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.runs/synth_1/MULTS.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file MULTS_utilization_synth.rpt -pb MULTS_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 11 13:02:25 2022...

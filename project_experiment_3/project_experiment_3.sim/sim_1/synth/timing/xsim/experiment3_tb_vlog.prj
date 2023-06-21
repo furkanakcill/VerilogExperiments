@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"experiment3_tb_time_synth.v" \
+"../../../../../project_experiment_3.srcs/sim_1/imports/Kodlar/sstu 3 testbench.v" \
+
+# Do not sort compile order
+nosort

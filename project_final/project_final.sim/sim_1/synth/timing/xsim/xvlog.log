@@ -1,0 +1,21 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/akare/Desktop/Final_v2/Final_v2.sim/sim_1/synth/timing/xsim/RB_TB_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RB
+INFO: [VRFC 10-311] analyzing module REG8
+INFO: [VRFC 10-311] analyzing module REG8_0
+INFO: [VRFC 10-311] analyzing module REG8_1
+INFO: [VRFC 10-311] analyzing module REG8_10
+INFO: [VRFC 10-311] analyzing module REG8_11
+INFO: [VRFC 10-311] analyzing module REG8_12
+INFO: [VRFC 10-311] analyzing module REG8_13
+INFO: [VRFC 10-311] analyzing module REG8_14
+INFO: [VRFC 10-311] analyzing module REG8_2
+INFO: [VRFC 10-311] analyzing module REG8_3
+INFO: [VRFC 10-311] analyzing module REG8_4
+INFO: [VRFC 10-311] analyzing module REG8_5
+INFO: [VRFC 10-311] analyzing module REG8_6
+INFO: [VRFC 10-311] analyzing module REG8_7
+INFO: [VRFC 10-311] analyzing module REG8_8
+INFO: [VRFC 10-311] analyzing module REG8_9
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/akare/Desktop/Final_v2/Final_v2.srcs/sim_1/new/RB_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RB_TB

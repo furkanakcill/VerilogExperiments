@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Dec 14 19:02:11 2022
+# Process ID: 20908
+# Current directory: C:/SSTU Dosyalar/project_experiment_7
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5020 C:\SSTU Dosyalar\project_experiment_7\project_experiment_7.xpr
+# Log file: C:/SSTU Dosyalar/project_experiment_7/vivado.log
+# Journal file: C:/SSTU Dosyalar/project_experiment_7\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 746.680 ; gain = 126.375
+update_compile_order -fileset sources_1
+close [ open {C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/sources_1/new/MAC.v} w ]
+add_files {{C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.srcs/sources_1/new/MAC.v}}
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'MULTS_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/SSTU Dosyalar/project_experiment_7/project_experiment_7.sim/sim_1/behav/xsim'
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+"xvlog --incr --relax -prj MULTS_tb_vlog.prj"
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'compile' step aborted
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 15 12:43:50 2022...

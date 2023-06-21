@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Dec 25 17:00:35 2022
+# Process ID: 18096
+# Current directory: C:/SSTU Dosyalar/exp8
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20240 C:\SSTU Dosyalar\exp8\exp8.xpr
+# Log file: C:/SSTU Dosyalar/exp8/vivado.log
+# Journal file: C:/SSTU Dosyalar/exp8\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/SSTU Dosyalar/exp8/exp8.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/akare/Desktop/lojiklab/project/exp8/.Xil/Vivado-27264-AKARE_A17/PrjAr/_X_' since last save.
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name DcpsUptoDate
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.1/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'BLK_IMG' is locked:
+* Project containing IP 'BLK_IMG' is read-only. * IP definition 'Block Memory Generator (8.4)' for IP 'BLK_IMG' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'BLK_OUT' is locked:
+* Project containing IP 'BLK_OUT' is read-only. * IP definition 'Block Memory Generator (8.4)' for IP 'BLK_OUT' (customized with software release 2019.2) has a different revision in the IP Catalog.
+WARNING: [Project 1-231] Project 'exp8.xpr' was created with a future version and may or may not perform reliably with this version of Vivado. It has been opened in read-only mode for the protection of unrecognized data. Use 'File | Save Project As...' if you wish to alter a copy of the project.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 759.977 ; gain = 118.090
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 25 17:16:17 2022...

@@ -1,0 +1,35 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 4e19133909b04a069fab499c3bcec0df --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot TOP_TB_behav xil_defaultlib.TOP_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 7 for port 'addra' [C:/Users/akare/Desktop/lojiklab/project/exp8/exp8.srcs/sources_1/new/Required.v:292]
+WARNING: [VRFC 10-5021] port 'wea' is not connected on this instance [C:/Users/akare/Desktop/lojiklab/project/exp8/exp8.srcs/sources_1/new/Required.v:273]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.CTLIN
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.BLK_IMG
+Compiling module xil_defaultlib.MULTB
+Compiling module xil_defaultlib.CGEN(N=16)
+Compiling module xil_defaultlib.CLA(N=16)
+Compiling module xil_defaultlib.MAC
+Compiling module xil_defaultlib.MAC_Normalize
+Compiling module xil_defaultlib.CONV
+Compiling module xil_defaultlib.CONV128_default
+Compiling module xil_defaultlib.CTLO
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.BLK_OUT
+Compiling module xil_defaultlib.TOP
+Compiling module xil_defaultlib.TOP_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TOP_TB_behav

@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"TOP_Module_tb_time_impl.v" \
+"../../../../../project_experiment_1.srcs/sim_1/new/AND_tb.v" \
+"../../../../../project_experiment_1.srcs/sim_1/new/EXNOR_tb.v" \
+"../../../../../project_experiment_1.srcs/sim_1/new/EXOR_tb.v" \
+"../../../../../project_experiment_1.srcs/sim_1/new/NAND_tb.v" \
+"../../../../../project_experiment_1.srcs/sim_1/new/NOR_tb.v" \
+"../../../../../project_experiment_1.srcs/sim_1/new/NOT_tb.v" \
+"../../../../../project_experiment_1.srcs/sim_1/new/OR_tb.v" \
+"../../../../../project_experiment_1.srcs/sim_1/new/TOP_Module_tb.v" \
+"../../../../../project_experiment_1.srcs/sim_1/new/TRI_tb.v" \
+
+# Do not sort compile order
+nosort

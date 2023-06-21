@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file C:\SSTU Dosyalar\project_experiment_2\project_experiment_2.runs\synth_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Ýzin verilmedi

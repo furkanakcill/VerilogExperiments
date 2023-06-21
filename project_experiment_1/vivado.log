@@ -1,0 +1,84 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed May 10 09:41:50 2023
+# Process ID: 22940
+# Current directory: C:/SSTU Dosyalar/project_experiment_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20524 C:\SSTU Dosyalar\project_experiment_1\project_experiment_1.xpr
+# Log file: C:/SSTU Dosyalar/project_experiment_1/vivado.log
+# Journal file: C:/SSTU Dosyalar/project_experiment_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.xpr}
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/akcil/Downloads/Nexys-4-DDR-Master.xdc'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 721.441 ; gain = 122.641
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: TOP_Module
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1132.844 ; gain = 171.125
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TOP_Module' [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/TOP_Module.v:4]
+INFO: [Synth 8-6157] synthesizing module 'AND' [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'AND' (1#1) [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:5]
+INFO: [Synth 8-6157] synthesizing module 'OR' [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'OR' (2#1) [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:17]
+INFO: [Synth 8-6157] synthesizing module 'NOT' [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'NOT' (3#1) [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:29]
+INFO: [Synth 8-6157] synthesizing module 'NAND' [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'NAND' (4#1) [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:41]
+INFO: [Synth 8-6157] synthesizing module 'NOR' [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'NOR' (5#1) [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:57]
+INFO: [Synth 8-6157] synthesizing module 'EXNOR' [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:72]
+INFO: [Synth 8-6157] synthesizing module 'LUT2' [D:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39042]
+	Parameter INIT bound to: 4'b1001 
+INFO: [Synth 8-6155] done synthesizing module 'LUT2' (6#1) [D:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39042]
+INFO: [Synth 8-6155] done synthesizing module 'EXNOR' (7#1) [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:72]
+INFO: [Synth 8-6157] synthesizing module 'EXOR' [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:91]
+INFO: [Synth 8-6157] synthesizing module 'LUT2__parameterized0' [D:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39042]
+	Parameter INIT bound to: 4'b0110 
+INFO: [Synth 8-6155] done synthesizing module 'LUT2__parameterized0' (7#1) [D:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39042]
+INFO: [Synth 8-6155] done synthesizing module 'EXOR' (8#1) [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:91]
+INFO: [Synth 8-6157] synthesizing module 'TRI' [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:110]
+INFO: [Synth 8-6155] done synthesizing module 'TRI' (9#1) [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:110]
+INFO: [Synth 8-6155] done synthesizing module 'TOP_Module' (10#1) [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/TOP_Module.v:4]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port IN[15]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1175.082 ; gain = 213.363
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1175.082 ; gain = 213.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1175.082 ; gain = 213.363
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 4 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 2 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+26 Infos, 1 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+ERROR: [Common 17-275] File does not exist [C:/Users/akcil/Downloads/Nexys-4-DDR-Master.xdc]
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May 10 09:43:35 2023...

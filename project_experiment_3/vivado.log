@@ -1,0 +1,543 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Nov  3 12:45:13 2022
+# Process ID: 3708
+# Current directory: C:/SSTU Dosyalar/project_experiment_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9604 C:\SSTU Dosyalar\project_experiment_3\project_experiment_3.xpr
+# Log file: C:/SSTU Dosyalar/project_experiment_3/vivado.log
+# Journal file: C:/SSTU Dosyalar/project_experiment_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Thu Nov  3 12:46:21 2022] Launched synth_1...
+Run output will be captured here: C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Thu Nov  3 12:46:59 2022] Launched impl_1...
+Run output will be captured here: C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Nov  3 12:48:00 2022] Launched impl_1...
+Run output will be captured here: C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A6E75DA
+set_property PROGRAM.FILE {C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.runs/impl_1/with_MUX.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.runs/impl_1/with_MUX.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'experiment3_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj experiment3_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.srcs/sources_1/imports/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MULTIPLEXER
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.srcs/sources_1/new/three_different_methods.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module with_SSI
+INFO: [VRFC 10-311] analyzing module with_decoder
+INFO: [VRFC 10-311] analyzing module with_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.srcs/sim_1/imports/Kodlar/sstu 3 testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module experiment3_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.sim/sim_1/behav/xsim'
+"xelab -wto 0562c82e1c604f25b7d9d975254b134e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot experiment3_tb_behav xil_defaultlib.experiment3_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 0562c82e1c604f25b7d9d975254b134e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot experiment3_tb_behav xil_defaultlib.experiment3_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MULTIPLEXER
+Compiling module xil_defaultlib.with_MUX
+Compiling module xil_defaultlib.experiment3_tb
+Compiling module xil_defaultlib.glbl
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Built simulation snapshot experiment3_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2020.648 ; gain = 0.000
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'elaborate' step aborted
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 2020.648 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+close_hw
+set_property top with_decoder [current_fileset]
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'experiment3_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj experiment3_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.srcs/sources_1/imports/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND
+INFO: [VRFC 10-311] analyzing module OR
+INFO: [VRFC 10-311] analyzing module NOT
+INFO: [VRFC 10-311] analyzing module NAND
+INFO: [VRFC 10-311] analyzing module NOR
+INFO: [VRFC 10-311] analyzing module EXNOR
+INFO: [VRFC 10-311] analyzing module EXOR
+INFO: [VRFC 10-311] analyzing module TRI
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.srcs/sources_1/new/three_different_methods.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module with_SSI
+INFO: [VRFC 10-311] analyzing module with_decoder
+INFO: [VRFC 10-311] analyzing module with_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.srcs/sim_1/imports/Kodlar/sstu 3 testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module experiment3_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.sim/sim_1/behav/xsim'
+"xelab -wto 0562c82e1c604f25b7d9d975254b134e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot experiment3_tb_behav xil_defaultlib.experiment3_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 0562c82e1c604f25b7d9d975254b134e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot experiment3_tb_behav xil_defaultlib.experiment3_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.DECODER
+Compiling module xil_defaultlib.OR
+Compiling module xil_defaultlib.with_decoder
+Compiling module xil_defaultlib.experiment3_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot experiment3_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "experiment3_tb_behav -key {Behavioral:sim_1:Functional:experiment3_tb} -tclbatch {experiment3_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source experiment3_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+{a,b,c,d}=0000 => {f3,f2,f1,f0} = 0000 -- TRUE
+{a,b,c,d}=0001 => {f3,f2,f1,f0} = 0000 -- TRUE
+{a,b,c,d}=0010 => {f3,f2,f1,f0} = 0000 -- TRUE
+{a,b,c,d}=0011 => {f3,f2,f1,f0} = 0000 -- TRUE
+{a,b,c,d}=0100 => {f3,f2,f1,f0} = 0000 -- TRUE
+{a,b,c,d}=0101 => {f3,f2,f1,f0} = 0001 -- TRUE
+{a,b,c,d}=0110 => {f3,f2,f1,f0} = 0010 -- TRUE
+{a,b,c,d}=0111 => {f3,f2,f1,f0} = 0011 -- TRUE
+{a,b,c,d}=1000 => {f3,f2,f1,f0} = 0000 -- TRUE
+{a,b,c,d}=1001 => {f3,f2,f1,f0} = 0010 -- TRUE
+{a,b,c,d}=1010 => {f3,f2,f1,f0} = 0100 -- TRUE
+{a,b,c,d}=1011 => {f3,f2,f1,f0} = 0110 -- TRUE
+{a,b,c,d}=1100 => {f3,f2,f1,f0} = 0000 -- TRUE
+{a,b,c,d}=1101 => {f3,f2,f1,f0} = 0011 -- TRUE
+{a,b,c,d}=1110 => {f3,f2,f1,f0} = 0110 -- TRUE
+{a,b,c,d}=1111 => {f3,f2,f1,f0} = 1001 -- TRUE
+$finish called at time : 800 ns : File "C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.srcs/sim_1/imports/Kodlar/sstu 3 testbench.v" Line 52
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'experiment3_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2052.781 ; gain = 31.473
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.runs/synth_1
+
+launch_runs synth_1 -jobs 6
+[Thu Nov  3 12:55:14 2022] Launched synth_1...
+Run output will be captured here: C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.runs/synth_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: with_decoder
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2465.793 ; gain = 179.492
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'with_decoder' [C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.srcs/sources_1/new/three_different_methods.v:41]
+ERROR: [Synth 8-439] module 'DECODER' not found [C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.srcs/sources_1/new/three_different_methods.v:61]
+ERROR: [Synth 8-6156] failed synthesizing module 'with_decoder' [C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.srcs/sources_1/new/three_different_methods.v:41]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2499.031 ; gain = 212.730
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+2 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'experiment3_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj experiment3_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.srcs/sources_1/imports/new/MSI_Library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DECODER
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.sim/sim_1/behav/xsim'
+"xelab -wto 0562c82e1c604f25b7d9d975254b134e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot experiment3_tb_behav xil_defaultlib.experiment3_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 0562c82e1c604f25b7d9d975254b134e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot experiment3_tb_behav xil_defaultlib.experiment3_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.DECODER
+Compiling module xil_defaultlib.OR
+Compiling module xil_defaultlib.with_decoder
+Compiling module xil_defaultlib.experiment3_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot experiment3_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "experiment3_tb_behav -key {Behavioral:sim_1:Functional:experiment3_tb} -tclbatch {experiment3_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source experiment3_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+{a,b,c,d}=0000 => {f3,f2,f1,f0} = 0000 -- TRUE
+{a,b,c,d}=0001 => {f3,f2,f1,f0} = 0000 -- TRUE
+{a,b,c,d}=0010 => {f3,f2,f1,f0} = 0000 -- TRUE
+{a,b,c,d}=0011 => {f3,f2,f1,f0} = 0000 -- TRUE
+{a,b,c,d}=0100 => {f3,f2,f1,f0} = 0000 -- TRUE
+{a,b,c,d}=0101 => {f3,f2,f1,f0} = 0001 -- TRUE
+{a,b,c,d}=0110 => {f3,f2,f1,f0} = 0010 -- TRUE
+{a,b,c,d}=0111 => {f3,f2,f1,f0} = 0011 -- TRUE
+{a,b,c,d}=1000 => {f3,f2,f1,f0} = 0000 -- TRUE
+{a,b,c,d}=1001 => {f3,f2,f1,f0} = 0010 -- TRUE
+{a,b,c,d}=1010 => {f3,f2,f1,f0} = 0100 -- TRUE
+{a,b,c,d}=1011 => {f3,f2,f1,f0} = 0110 -- TRUE
+{a,b,c,d}=1100 => {f3,f2,f1,f0} = 0000 -- TRUE
+{a,b,c,d}=1101 => {f3,f2,f1,f0} = 0011 -- TRUE
+{a,b,c,d}=1110 => {f3,f2,f1,f0} = 0110 -- TRUE
+{a,b,c,d}=1111 => {f3,f2,f1,f0} = 1001 -- TRUE
+$finish called at time : 800 ns : File "C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.srcs/sim_1/imports/Kodlar/sstu 3 testbench.v" Line 52
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'experiment3_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.runs/synth_1
+
+launch_runs synth_1 -jobs 6
+[Thu Nov  3 12:58:03 2022] Launched synth_1...
+Run output will be captured here: C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Thu Nov  3 12:58:37 2022] Launched impl_1...
+Run output will be captured here: C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 3103.906 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 3103.906 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3103.906 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 3235.824 ; gain = 676.781
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+launch_simulation -mode post-synthesis -type timing
+INFO: [Vivado 12-5682] Launching post-synthesis timing simulation in 'C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.sim/sim_1/synth/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc]
+Finished Parsing XDC File [C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3262.074 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.sim/sim_1/synth/timing/xsim/experiment3_tb_time_synth.v"
+INFO: [SIM-utils-27] Writing SDF file...
+INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.sim/sim_1/synth/timing/xsim/experiment3_tb_time_synth.sdf"
+INFO: [SIM-utils-36] Netlist generated:C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.sim/sim_1/synth/timing/xsim/experiment3_tb_time_synth.v
+INFO: [SIM-utils-37] SDF generated:C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.sim/sim_1/synth/timing/xsim/experiment3_tb_time_synth.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'experiment3_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.sim/sim_1/synth/timing/xsim'
+"xvlog --incr --relax -prj experiment3_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.sim/sim_1/synth/timing/xsim/experiment3_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DECODER
+INFO: [VRFC 10-311] analyzing module with_decoder
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.srcs/sim_1/imports/Kodlar/sstu 3 testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module experiment3_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.sim/sim_1/synth/timing/xsim'
+"xelab -wto 0562c82e1c604f25b7d9d975254b134e --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot experiment3_tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.experiment3_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 0562c82e1c604f25b7d9d975254b134e --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot experiment3_tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.experiment3_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "experiment3_tb_time_synth.sdf", for root module "experiment3_tb/UUT".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "experiment3_tb_time_synth.sdf", for root module "experiment3_tb/UUT".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.LUT4
+Compiling module xil_defaultlib.DECODER
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module xil_defaultlib.with_decoder
+Compiling module xil_defaultlib.experiment3_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot experiment3_tb_time_synth
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/SSTU -notrace
+couldn't read file "C:/SSTU": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Thu Nov  3 13:01:02 2022...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.sim/sim_1/synth/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "experiment3_tb_time_synth -key {Post-Synthesis:sim_1:Timing:experiment3_tb} -tclbatch {experiment3_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source experiment3_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+{a,b,c,d}=0000 => {f3,f2,f1,f0} = 0000 -- TRUE
+{a,b,c,d}=0001 => {f3,f2,f1,f0} = 0000 -- TRUE
+{a,b,c,d}=0010 => {f3,f2,f1,f0} = 0000 -- TRUE
+{a,b,c,d}=0011 => {f3,f2,f1,f0} = 0000 -- TRUE
+{a,b,c,d}=0100 => {f3,f2,f1,f0} = 0000 -- TRUE
+{a,b,c,d}=0101 => {f3,f2,f1,f0} = 0001 -- TRUE
+{a,b,c,d}=0110 => {f3,f2,f1,f0} = 0010 -- TRUE
+{a,b,c,d}=0111 => {f3,f2,f1,f0} = 0011 -- TRUE
+{a,b,c,d}=1000 => {f3,f2,f1,f0} = 0000 -- TRUE
+{a,b,c,d}=1001 => {f3,f2,f1,f0} = 0010 -- TRUE
+{a,b,c,d}=1010 => {f3,f2,f1,f0} = 0100 -- TRUE
+{a,b,c,d}=1011 => {f3,f2,f1,f0} = 0110 -- TRUE
+{a,b,c,d}=1100 => {f3,f2,f1,f0} = 0000 -- TRUE
+{a,b,c,d}=1101 => {f3,f2,f1,f0} = 0011 -- TRUE
+{a,b,c,d}=1110 => {f3,f2,f1,f0} = 0110 -- TRUE
+{a,b,c,d}=1111 => {f3,f2,f1,f0} = 1001 -- TRUE
+$finish called at time : 800 ns : File "C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.srcs/sim_1/imports/Kodlar/sstu 3 testbench.v" Line 52
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'experiment3_tb_time_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 3367.363 ; gain = 131.539
+launch_simulation -mode post-implementation -type timing
+INFO: [Vivado 12-5682] Launching post-implementation timing simulation in 'C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.sim/sim_1/impl/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-32] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.sim/sim_1/impl/timing/xsim/experiment3_tb_time_impl.v"
+INFO: [SIM-utils-34] Writing SDF file...
+INFO: [SIM-utils-35] write_sdf -mode timesim -process_corner slow -force -file "C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.sim/sim_1/impl/timing/xsim/experiment3_tb_time_impl.sdf"
+INFO: [SIM-utils-36] Netlist generated:C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.sim/sim_1/impl/timing/xsim/experiment3_tb_time_impl.v
+INFO: [SIM-utils-37] SDF generated:C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.sim/sim_1/impl/timing/xsim/experiment3_tb_time_impl.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'experiment3_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.sim/sim_1/impl/timing/xsim'
+"xvlog --incr --relax -prj experiment3_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.sim/sim_1/impl/timing/xsim/experiment3_tb_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DECODER
+INFO: [VRFC 10-311] analyzing module with_decoder
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.srcs/sim_1/imports/Kodlar/sstu 3 testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module experiment3_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.sim/sim_1/impl/timing/xsim'
+"xelab -wto 0562c82e1c604f25b7d9d975254b134e --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot experiment3_tb_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.experiment3_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 0562c82e1c604f25b7d9d975254b134e --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot experiment3_tb_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.experiment3_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "experiment3_tb_time_impl.sdf", for root module "experiment3_tb/UUT".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "experiment3_tb_time_impl.sdf", for root module "experiment3_tb/UUT".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.LUT4
+Compiling module xil_defaultlib.DECODER
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module xil_defaultlib.with_decoder
+Compiling module xil_defaultlib.experiment3_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot experiment3_tb_time_impl
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/SSTU -notrace
+couldn't read file "C:/SSTU": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Thu Nov  3 13:01:55 2022...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.sim/sim_1/impl/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "experiment3_tb_time_impl -key {Post-Implementation:sim_1:Timing:experiment3_tb} -tclbatch {experiment3_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source experiment3_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+{a,b,c,d}=0000 => {f3,f2,f1,f0} = 0000 -- TRUE
+{a,b,c,d}=0001 => {f3,f2,f1,f0} = 0000 -- TRUE
+{a,b,c,d}=0010 => {f3,f2,f1,f0} = 0000 -- TRUE
+{a,b,c,d}=0011 => {f3,f2,f1,f0} = 0000 -- TRUE
+{a,b,c,d}=0100 => {f3,f2,f1,f0} = 0000 -- TRUE
+{a,b,c,d}=0101 => {f3,f2,f1,f0} = 0001 -- TRUE
+{a,b,c,d}=0110 => {f3,f2,f1,f0} = 0010 -- TRUE
+{a,b,c,d}=0111 => {f3,f2,f1,f0} = 0011 -- TRUE
+{a,b,c,d}=1000 => {f3,f2,f1,f0} = 0000 -- TRUE
+{a,b,c,d}=1001 => {f3,f2,f1,f0} = 0010 -- TRUE
+{a,b,c,d}=1010 => {f3,f2,f1,f0} = 0100 -- TRUE
+{a,b,c,d}=1011 => {f3,f2,f1,f0} = 0110 -- TRUE
+{a,b,c,d}=1100 => {f3,f2,f1,f0} = 0000 -- TRUE
+{a,b,c,d}=1101 => {f3,f2,f1,f0} = 0011 -- TRUE
+{a,b,c,d}=1110 => {f3,f2,f1,f0} = 0110 -- TRUE
+{a,b,c,d}=1111 => {f3,f2,f1,f0} = 1001 -- TRUE
+$finish called at time : 800 ns : File "C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.srcs/sim_1/imports/Kodlar/sstu 3 testbench.v" Line 52
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'experiment3_tb_time_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 3376.773 ; gain = 9.410
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -datasheet -name timing_1
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.runs/synth_1
+
+launch_runs synth_1 -jobs 6
+[Thu Nov  3 13:10:03 2022] Launched synth_1...
+Run output will be captured here: C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Nov  3 13:11:25 2022] Launched impl_1...
+Run output will be captured here: C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.runs/impl_1/runme.log
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -datasheet -name timing_1
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Nov  3 13:12:23 2022] Launched impl_1...
+Run output will be captured here: C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.runs/impl_1/runme.log
+current_design synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -datasheet -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+current_design impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -datasheet -name timing_2
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+current_sim simulation_2
+file copy -force {C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.runs/impl_1/with_decoder.bit} {C:/SSTU Dosyalar/project_experiment_3/with_encoder.bit}
+get_cells
+a_IBUF_inst b_IBUF_inst c_IBUF_inst d_IBUF_inst decoder1 f0_OBUF_inst f0_OBUF_inst_i_1 f1_OBUF_inst f1_OBUF_inst_i_1 f2_OBUF_inst f2_OBUF_inst_i_1 f3_OBUF_inst
+current_sim simulation_4
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+current_sim simulation_3
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Nov  3 14:17:28 2022...

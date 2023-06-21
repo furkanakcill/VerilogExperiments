@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/EHB-436E-Projects/Experiment6_v2/Experiment6_v2.srcs/sim_1/new/FSM1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM1_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/EHB-436E-Projects/Experiment6_v2/Experiment6_v2.sim/sim_1/impl/func/xsim/FSM1_tb_func_impl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FSM2

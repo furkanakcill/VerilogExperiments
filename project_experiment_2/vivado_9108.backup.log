@@ -1,0 +1,2018 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Oct 26 21:32:26 2022
+# Process ID: 9108
+# Current directory: C:/SSTU Dosyalar/project_experiment_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9948 C:\SSTU Dosyalar\project_experiment_2\project_experiment_2.xpr
+# Log file: C:/SSTU Dosyalar/project_experiment_2/vivado.log
+# Journal file: C:/SSTU Dosyalar/project_experiment_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 728.473 ; gain = 115.012
+update_compile_order -fileset sources_1
+add_files -norecurse {{C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v}}
+update_compile_order -fileset sources_1
+file mkdir C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/constrs_1
+add_files -fileset constrs_1 -norecurse C:/Users/akcil/Downloads/Nexys-4-DDR-Master.xdc
+file mkdir C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sim_1/new
+file mkdir C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sim_1/new
+file mkdir C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sim_1/new
+file mkdir C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sim_1/new
+file mkdir C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+file mkdir C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sim_1/new
+file mkdir {C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sim_1/new}
+close [ open {C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sim_1/new/TOP_Module_tb.v} w ]
+add_files -fileset sim_1 {{C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sim_1/new/TOP_Module_tb.v}}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: TOP_Module
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1182.879 ; gain = 176.297
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TOP_Module' [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v:4]
+INFO: [Synth 8-6157] synthesizing module 'DECODER' [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v:5]
+INFO: [Synth 8-226] default block is never used [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'DECODER' (1#1) [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'TOP_Module' (2#1) [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v:4]
+WARNING: [Synth 8-3917] design TOP_Module has port an[3] driven by constant 1
+WARNING: [Synth 8-3917] design TOP_Module has port an[2] driven by constant 1
+WARNING: [Synth 8-3917] design TOP_Module has port an[1] driven by constant 1
+WARNING: [Synth 8-3917] design TOP_Module has port an[0] driven by constant 0
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port sw[7]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port sw[6]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port sw[5]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port sw[4]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port btn[3]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port btn[2]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port btn[1]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port btn[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1246.434 ; gain = 239.852
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1246.434 ; gain = 239.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1246.434 ; gain = 239.852
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 4 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/akcil/Downloads/Nexys-4-DDR-Master.xdc]
+Finished Parsing XDC File [C:/Users/akcil/Downloads/Nexys-4-DDR-Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1286.547 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1398.188 ; gain = 391.605
+10 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1398.188 ; gain = 597.512
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_Module_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TOP_Module_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DECODER
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_Module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sim_1/new/TOP_Module_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_Module_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+"xelab -wto 2816d65bd2e44888979d0d8fda8d02f0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TOP_Module_tb_behav xil_defaultlib.TOP_Module_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 2816d65bd2e44888979d0d8fda8d02f0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TOP_Module_tb_behav xil_defaultlib.TOP_Module_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <Top_Module> not found while processing module instance <uut> [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sim_1/new/TOP_Module_tb.v:13]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1402.051 ; gain = 3.863
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_Module_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TOP_Module_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DECODER
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_Module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sim_1/new/TOP_Module_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_Module_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+"xelab -wto 2816d65bd2e44888979d0d8fda8d02f0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TOP_Module_tb_behav xil_defaultlib.TOP_Module_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 2816d65bd2e44888979d0d8fda8d02f0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TOP_Module_tb_behav xil_defaultlib.TOP_Module_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'btn' [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sim_1/new/TOP_Module_tb.v:14]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.DECODER
+Compiling module xil_defaultlib.TOP_Module
+Compiling module xil_defaultlib.TOP_Module_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TOP_Module_tb_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/SSTU -notrace
+couldn't read file "C:/SSTU": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Wed Oct 26 23:45:50 2022...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1402.051 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TOP_Module_tb_behav -key {Behavioral:sim_1:Functional:TOP_Module_tb} -tclbatch {TOP_Module_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source TOP_Module_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TOP_Module_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1402.051 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_Module_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TOP_Module_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DECODER
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_Module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sim_1/new/TOP_Module_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_Module_tb
+ERROR: [VRFC 10-3594] non-net port 'sw' cannot be of mode inout [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sim_1/new/TOP_Module_tb.v:5]
+ERROR: [VRFC 10-3594] non-net port 'btn' cannot be of mode inout [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sim_1/new/TOP_Module_tb.v:6]
+ERROR: [VRFC 10-2865] module 'TOP_Module_tb' ignored due to previous errors [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sim_1/new/TOP_Module_tb.v:4]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_Module_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TOP_Module_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DECODER
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_Module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sim_1/new/TOP_Module_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_Module_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+"xelab -wto 2816d65bd2e44888979d0d8fda8d02f0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TOP_Module_tb_behav xil_defaultlib.TOP_Module_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 2816d65bd2e44888979d0d8fda8d02f0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TOP_Module_tb_behav xil_defaultlib.TOP_Module_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.DECODER
+Compiling module xil_defaultlib.TOP_Module
+Compiling module xil_defaultlib.TOP_Module_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TOP_Module_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TOP_Module_tb_behav -key {Behavioral:sim_1:Functional:TOP_Module_tb} -tclbatch {TOP_Module_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source TOP_Module_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 160 ns : File "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sim_1/new/TOP_Module_tb.v" Line 57
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TOP_Module_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+remove_forces { {/TOP_Module_tb/cat} }
+remove_forces { {/TOP_Module_tb/sw[7]} {/TOP_Module_tb/sw[6]} {/TOP_Module_tb/sw[5]} {/TOP_Module_tb/sw[4]} }
+launch_runs synth_1 -jobs 6
+[Thu Oct 27 00:08:38 2022] Launched synth_1...
+Run output will be captured here: C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/akcil/Downloads/Nexys-4-DDR-Master.xdc]
+Finished Parsing XDC File [C:/Users/akcil/Downloads/Nexys-4-DDR-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1467.793 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+launch_runs impl_1 -jobs 6
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2162.297 ; gain = 0.000
+Writing placer database...
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.107 . Memory (MB): peak = 2163.246 ; gain = 0.949
+[Thu Oct 27 00:40:46 2022] Launched impl_1...
+Run output will be captured here: C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 2309.441 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 2309.441 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2309.441 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -datasheet -name timing_1
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -datasheet -name timing_2
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+ERROR: [Constraints 18-358] set_max_delay: at least one of -from, -through or -to required.
+set_max_delay -rise 10.0
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -datasheet -name timing_3
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+ERROR: [Constraints 18-358] set_max_delay: at least one of -from, -through or -to required.
+ERROR: [Constraints 18-358] set_max_delay: at least one of -from, -through or -to required.
+ERROR: [Constraints 18-358] set_max_delay: at least one of -from, -through or -to required.
+ERROR: [Constraints 18-358] set_max_delay: at least one of -from, -through or -to required.
+set_max_delay -fall 10.0
+ERROR: [Constraints 18-540] set_max_delay -datapath_only requires -from to be non-empty.
+set_max_delay -rise 10.0
+ERROR: [Constraints 18-540] set_max_delay -datapath_only requires -from to be non-empty.
+set_max_delay -rise 10.0
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -datasheet -name timing_4
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Constraints 18-515] set_max_delay: Path segmentation by forcing 'an_OBUF[0]_inst/I' to be timing startpoint.
+Resolution: Use valid startpoint to avoid path segmentation such as the clock pin of a register.
+WARNING: [Constraints 18-613] set_max_delay: There will be no hold timing paths from this pin 'an_OBUF[0]_inst/I' unless set_min_delay is used to constrain the paths.
+Resolution: Use set_min_delay constraint to manually define the constraint for hold check.
+CRITICAL WARNING: [Constraints 18-514] set_max_delay: Path segmentation by forcing 'an_OBUF[0]_inst/I' to be timing endpoint. There will be no hold timing paths to this pin unless set_min_delay is used to constrain the paths.
+Resolution: Use valid endpoint to avoid path segmentation such as the data pin of a register.
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -datasheet -name timing_4
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+set_max_delay -rise -from [get_ports {sw[3]}] -through [get_nets {cat_OBUF[4]}] 10.0
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -datasheet -name timing_4
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -datasheet -name timing_5
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -datasheet -name timing_5
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+set_max_delay -rise -from [get_ports [list sw[0] sw[1] sw[2] sw[3] ]] -through [get_nets [list cat_OBUF[4] cat[1] cat[2] cat[3] cat[0] cat[4] cat[5] cat[6] led[0] led[1] led[2] led[3] led[4] led[5] led[6] led[7] dp ]] 10.0
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -datasheet -name timing_5
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Constraints 18-514] set_max_delay: Path segmentation by forcing 'an_OBUF[0]_inst/O' to be timing endpoint. There will be no hold timing paths to this pin unless set_min_delay is used to constrain the paths.
+Resolution: Use valid endpoint to avoid path segmentation such as the data pin of a register.
+CRITICAL WARNING: [Constraints 18-514] set_max_delay: Path segmentation by forcing 'an_OBUF[0]_inst/I' to be timing endpoint. There will be no hold timing paths to this pin unless set_min_delay is used to constrain the paths.
+Resolution: Use valid endpoint to avoid path segmentation such as the data pin of a register.
+CRITICAL WARNING: [Constraints 18-514] set_max_delay: Path segmentation by forcing 'an_OBUF[1]_inst/O' to be timing endpoint. There will be no hold timing paths to this pin unless set_min_delay is used to constrain the paths.
+Resolution: Use valid endpoint to avoid path segmentation such as the data pin of a register.
+CRITICAL WARNING: [Constraints 18-514] set_max_delay: Path segmentation by forcing 'an_OBUF[1]_inst/I' to be timing endpoint. There will be no hold timing paths to this pin unless set_min_delay is used to constrain the paths.
+Resolution: Use valid endpoint to avoid path segmentation such as the data pin of a register.
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -datasheet -name timing_5
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+ERROR: [Constraints 18-358] set_max_delay: at least one of -from, -through or -to required.
+set_max_delay -datapath_only -from [get_ports [list sw[0] sw[1] sw[2] sw[3] ]] -to [get_ports [list cat[0] cat[1] cat[2] cat[3] cat[4] cat[5] cat[6] dp led[0] led[1] led[2] led[3] led[4] led[5] led[6] led[7] ]] 10.0
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -datasheet -name timing_5
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -datasheet -name timing_5
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+set_max_delay -from [get_ports [list sw[0] sw[1] sw[2] sw[3] ]] -to [get_ports [list cat[0] cat[1] cat[2] cat[3] cat[4] cat[5] cat[6] dp led[0] led[1] led[2] led[3] led[4] led[5] led[6] led[7] ]] 10.0
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -datasheet -name timing_5
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -datasheet -name timing_5
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+set_max_delay -from [get_ports [list sw[0] sw[3] ]] -to [get_ports [list cat[0] cat[1] cat[4] ]] 10.0
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -datasheet -name timing_5
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -datasheet -name timing_5
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -datasheet -name timing_5
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_Module_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TOP_Module_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_Module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sim_1/new/TOP_Module_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_Module_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+"xelab -wto 2816d65bd2e44888979d0d8fda8d02f0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TOP_Module_tb_behav xil_defaultlib.TOP_Module_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 2816d65bd2e44888979d0d8fda8d02f0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TOP_Module_tb_behav xil_defaultlib.TOP_Module_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <PRIORITY_ENCODER> not found while processing module instance <encoder1> [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v:23]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_Module_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TOP_Module_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ENCODER
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND
+INFO: [VRFC 10-311] analyzing module OR
+INFO: [VRFC 10-311] analyzing module NOT
+INFO: [VRFC 10-311] analyzing module NAND
+INFO: [VRFC 10-311] analyzing module NOR
+INFO: [VRFC 10-311] analyzing module EXNOR
+INFO: [VRFC 10-311] analyzing module EXOR
+INFO: [VRFC 10-311] analyzing module TRI
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_Module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sim_1/new/TOP_Module_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_Module_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+"xelab -wto 2816d65bd2e44888979d0d8fda8d02f0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TOP_Module_tb_behav xil_defaultlib.TOP_Module_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 2816d65bd2e44888979d0d8fda8d02f0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TOP_Module_tb_behav xil_defaultlib.TOP_Module_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.OR
+Compiling module xil_defaultlib.NOT
+Compiling module xil_defaultlib.AND
+Compiling module xil_defaultlib.ENCODER
+Compiling module xil_defaultlib.TOP_Module
+Compiling module xil_defaultlib.TOP_Module_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TOP_Module_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TOP_Module_tb_behav -key {Behavioral:sim_1:Functional:TOP_Module_tb} -tclbatch {TOP_Module_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source TOP_Module_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 160 ns : File "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sim_1/new/TOP_Module_tb.v" Line 57
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TOP_Module_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 3025.859 ; gain = 1.004
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_Module_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TOP_Module_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ENCODER
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND
+INFO: [VRFC 10-311] analyzing module OR
+INFO: [VRFC 10-311] analyzing module NOT
+INFO: [VRFC 10-311] analyzing module NAND
+INFO: [VRFC 10-311] analyzing module NOR
+INFO: [VRFC 10-311] analyzing module EXNOR
+INFO: [VRFC 10-311] analyzing module EXOR
+INFO: [VRFC 10-311] analyzing module TRI
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_Module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sim_1/new/TOP_Module_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_Module_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+"xelab -wto 2816d65bd2e44888979d0d8fda8d02f0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TOP_Module_tb_behav xil_defaultlib.TOP_Module_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 2816d65bd2e44888979d0d8fda8d02f0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TOP_Module_tb_behav xil_defaultlib.TOP_Module_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'V' is not permitted [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v:57]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_Module_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TOP_Module_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ENCODER
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND
+INFO: [VRFC 10-311] analyzing module OR
+INFO: [VRFC 10-311] analyzing module NOT
+INFO: [VRFC 10-311] analyzing module NAND
+INFO: [VRFC 10-311] analyzing module NOR
+INFO: [VRFC 10-311] analyzing module EXNOR
+INFO: [VRFC 10-311] analyzing module EXOR
+INFO: [VRFC 10-311] analyzing module TRI
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_Module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sim_1/new/TOP_Module_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_Module_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+"xelab -wto 2816d65bd2e44888979d0d8fda8d02f0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TOP_Module_tb_behav xil_defaultlib.TOP_Module_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 2816d65bd2e44888979d0d8fda8d02f0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TOP_Module_tb_behav xil_defaultlib.TOP_Module_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'V' is not permitted [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v:57]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_Module_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TOP_Module_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ENCODER
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND
+INFO: [VRFC 10-311] analyzing module OR
+INFO: [VRFC 10-311] analyzing module NOT
+INFO: [VRFC 10-311] analyzing module NAND
+INFO: [VRFC 10-311] analyzing module NOR
+INFO: [VRFC 10-311] analyzing module EXNOR
+INFO: [VRFC 10-311] analyzing module EXOR
+INFO: [VRFC 10-311] analyzing module TRI
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_Module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sim_1/new/TOP_Module_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_Module_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+"xelab -wto 2816d65bd2e44888979d0d8fda8d02f0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TOP_Module_tb_behav xil_defaultlib.TOP_Module_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 2816d65bd2e44888979d0d8fda8d02f0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TOP_Module_tb_behav xil_defaultlib.TOP_Module_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.OR
+Compiling module xil_defaultlib.NOT
+Compiling module xil_defaultlib.AND
+Compiling module xil_defaultlib.ENCODER
+Compiling module xil_defaultlib.TOP_Module
+Compiling module xil_defaultlib.TOP_Module_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TOP_Module_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TOP_Module_tb_behav -key {Behavioral:sim_1:Functional:TOP_Module_tb} -tclbatch {TOP_Module_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source TOP_Module_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 160 ns : File "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sim_1/new/TOP_Module_tb.v" Line 57
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TOP_Module_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 3025.859 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_Module_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TOP_Module_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ENCODER
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND
+INFO: [VRFC 10-311] analyzing module OR
+INFO: [VRFC 10-311] analyzing module NOT
+INFO: [VRFC 10-311] analyzing module NAND
+INFO: [VRFC 10-311] analyzing module NOR
+INFO: [VRFC 10-311] analyzing module EXNOR
+INFO: [VRFC 10-311] analyzing module EXOR
+INFO: [VRFC 10-311] analyzing module TRI
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_Module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sim_1/new/TOP_Module_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_Module_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+"xelab -wto 2816d65bd2e44888979d0d8fda8d02f0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TOP_Module_tb_behav xil_defaultlib.TOP_Module_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 2816d65bd2e44888979d0d8fda8d02f0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TOP_Module_tb_behav xil_defaultlib.TOP_Module_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'V' is not permitted [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v:57]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_Module_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TOP_Module_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ENCODER
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND
+INFO: [VRFC 10-311] analyzing module OR
+INFO: [VRFC 10-311] analyzing module NOT
+INFO: [VRFC 10-311] analyzing module NAND
+INFO: [VRFC 10-311] analyzing module NOR
+INFO: [VRFC 10-311] analyzing module EXNOR
+INFO: [VRFC 10-311] analyzing module EXOR
+INFO: [VRFC 10-311] analyzing module TRI
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_Module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sim_1/new/TOP_Module_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_Module_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+"xelab -wto 2816d65bd2e44888979d0d8fda8d02f0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TOP_Module_tb_behav xil_defaultlib.TOP_Module_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 2816d65bd2e44888979d0d8fda8d02f0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TOP_Module_tb_behav xil_defaultlib.TOP_Module_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.OR
+Compiling module xil_defaultlib.NOT
+Compiling module xil_defaultlib.AND
+Compiling module xil_defaultlib.ENCODER
+Compiling module xil_defaultlib.TOP_Module
+Compiling module xil_defaultlib.TOP_Module_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TOP_Module_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TOP_Module_tb_behav -key {Behavioral:sim_1:Functional:TOP_Module_tb} -tclbatch {TOP_Module_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source TOP_Module_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 160 ns : File "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sim_1/new/TOP_Module_tb.v" Line 57
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TOP_Module_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3025.859 ; gain = 0.000
+current_design rtl_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 3053.242 ; gain = 27.383
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TOP_Module' [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v:4]
+INFO: [Synth 8-6157] synthesizing module 'ENCODER' [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v:36]
+INFO: [Synth 8-6157] synthesizing module 'OR' [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'OR' (1#1) [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:17]
+INFO: [Synth 8-6157] synthesizing module 'NOT' [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'NOT' (2#1) [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:29]
+WARNING: [Synth 8-6104] Input port 'IN' has an internal driver [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v:50]
+INFO: [Synth 8-6157] synthesizing module 'AND' [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'AND' (3#1) [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:5]
+WARNING: [Synth 8-3848] Net w1 in module/entity ENCODER does not have driver. [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'ENCODER' (4#1) [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v:36]
+WARNING: [Synth 8-3848] Net cat in module/entity TOP_Module does not have driver. [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v:10]
+WARNING: [Synth 8-3848] Net an in module/entity TOP_Module does not have driver. [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v:11]
+WARNING: [Synth 8-3848] Net dp in module/entity TOP_Module does not have driver. [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'TOP_Module' (5#1) [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v:4]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port led[6]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port led[5]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port led[4]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port led[3]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port led[2]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port cat[6]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port cat[5]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port cat[4]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port cat[3]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port cat[2]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port cat[1]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port cat[0]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port an[3]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port an[2]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port an[1]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port an[0]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port dp
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port sw[7]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port sw[6]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port sw[5]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port sw[4]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port btn[3]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port btn[2]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port btn[1]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port btn[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3086.664 ; gain = 60.805
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3108.562 ; gain = 82.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3108.562 ; gain = 82.703
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/akcil/Downloads/Nexys-4-DDR-Master.xdc]
+Finished Parsing XDC File [C:/Users/akcil/Downloads/Nexys-4-DDR-Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 3556.438 ; gain = 530.578
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_Module_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TOP_Module_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ENCODER
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND
+INFO: [VRFC 10-311] analyzing module OR
+INFO: [VRFC 10-311] analyzing module NOT
+INFO: [VRFC 10-311] analyzing module NAND
+INFO: [VRFC 10-311] analyzing module NOR
+INFO: [VRFC 10-311] analyzing module EXNOR
+INFO: [VRFC 10-311] analyzing module EXOR
+INFO: [VRFC 10-311] analyzing module TRI
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_Module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sim_1/new/TOP_Module_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_Module_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+"xelab -wto 2816d65bd2e44888979d0d8fda8d02f0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TOP_Module_tb_behav xil_defaultlib.TOP_Module_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 2816d65bd2e44888979d0d8fda8d02f0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TOP_Module_tb_behav xil_defaultlib.TOP_Module_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.OR
+Compiling module xil_defaultlib.NOT
+Compiling module xil_defaultlib.AND
+Compiling module xil_defaultlib.ENCODER
+Compiling module xil_defaultlib.TOP_Module
+Compiling module xil_defaultlib.TOP_Module_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TOP_Module_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TOP_Module_tb_behav -key {Behavioral:sim_1:Functional:TOP_Module_tb} -tclbatch {TOP_Module_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source TOP_Module_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 160 ns : File "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sim_1/new/TOP_Module_tb.v" Line 57
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TOP_Module_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 3561.359 ; gain = 4.480
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_Module_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TOP_Module_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ENCODER
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND
+INFO: [VRFC 10-311] analyzing module OR
+INFO: [VRFC 10-311] analyzing module NOT
+INFO: [VRFC 10-311] analyzing module NAND
+INFO: [VRFC 10-311] analyzing module NOR
+INFO: [VRFC 10-311] analyzing module EXNOR
+INFO: [VRFC 10-311] analyzing module EXOR
+INFO: [VRFC 10-311] analyzing module TRI
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_Module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sim_1/new/TOP_Module_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_Module_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+"xelab -wto 2816d65bd2e44888979d0d8fda8d02f0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TOP_Module_tb_behav xil_defaultlib.TOP_Module_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 2816d65bd2e44888979d0d8fda8d02f0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TOP_Module_tb_behav xil_defaultlib.TOP_Module_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2922] 'OR' expects 3 arguments [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v:56]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_Module_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TOP_Module_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ENCODER
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND
+INFO: [VRFC 10-311] analyzing module OR
+INFO: [VRFC 10-311] analyzing module NOT
+INFO: [VRFC 10-311] analyzing module NAND
+INFO: [VRFC 10-311] analyzing module NOR
+INFO: [VRFC 10-311] analyzing module EXNOR
+INFO: [VRFC 10-311] analyzing module EXOR
+INFO: [VRFC 10-311] analyzing module TRI
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_Module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sim_1/new/TOP_Module_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_Module_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+"xelab -wto 2816d65bd2e44888979d0d8fda8d02f0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TOP_Module_tb_behav xil_defaultlib.TOP_Module_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 2816d65bd2e44888979d0d8fda8d02f0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TOP_Module_tb_behav xil_defaultlib.TOP_Module_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.OR
+Compiling module xil_defaultlib.NOT
+Compiling module xil_defaultlib.AND
+Compiling module xil_defaultlib.ENCODER
+Compiling module xil_defaultlib.TOP_Module
+Compiling module xil_defaultlib.TOP_Module_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TOP_Module_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TOP_Module_tb_behav -key {Behavioral:sim_1:Functional:TOP_Module_tb} -tclbatch {TOP_Module_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source TOP_Module_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 160 ns : File "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sim_1/new/TOP_Module_tb.v" Line 57
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TOP_Module_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 3561.359 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_Module_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TOP_Module_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ENCODER
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND
+INFO: [VRFC 10-311] analyzing module OR
+INFO: [VRFC 10-311] analyzing module NOT
+INFO: [VRFC 10-311] analyzing module NAND
+INFO: [VRFC 10-311] analyzing module NOR
+INFO: [VRFC 10-311] analyzing module EXNOR
+INFO: [VRFC 10-311] analyzing module EXOR
+INFO: [VRFC 10-311] analyzing module TRI
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_Module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sim_1/new/TOP_Module_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_Module_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+"xelab -wto 2816d65bd2e44888979d0d8fda8d02f0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TOP_Module_tb_behav xil_defaultlib.TOP_Module_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 2816d65bd2e44888979d0d8fda8d02f0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TOP_Module_tb_behav xil_defaultlib.TOP_Module_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.OR
+Compiling module xil_defaultlib.NOT
+Compiling module xil_defaultlib.AND
+Compiling module xil_defaultlib.ENCODER
+Compiling module xil_defaultlib.TOP_Module
+Compiling module xil_defaultlib.TOP_Module_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TOP_Module_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TOP_Module_tb_behav -key {Behavioral:sim_1:Functional:TOP_Module_tb} -tclbatch {TOP_Module_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source TOP_Module_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 160 ns : File "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sim_1/new/TOP_Module_tb.v" Line 57
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TOP_Module_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 3561.359 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_Module_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TOP_Module_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ENCODER
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND
+INFO: [VRFC 10-311] analyzing module OR
+INFO: [VRFC 10-311] analyzing module NOT
+INFO: [VRFC 10-311] analyzing module NAND
+INFO: [VRFC 10-311] analyzing module NOR
+INFO: [VRFC 10-311] analyzing module EXNOR
+INFO: [VRFC 10-311] analyzing module EXOR
+INFO: [VRFC 10-311] analyzing module TRI
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_Module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sim_1/new/TOP_Module_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_Module_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+"xelab -wto 2816d65bd2e44888979d0d8fda8d02f0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TOP_Module_tb_behav xil_defaultlib.TOP_Module_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 2816d65bd2e44888979d0d8fda8d02f0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TOP_Module_tb_behav xil_defaultlib.TOP_Module_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'V' is not permitted [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v:57]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_Module_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TOP_Module_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MULTIPLEXER
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_Module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sim_1/new/TOP_Module_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_Module_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+"xelab -wto 2816d65bd2e44888979d0d8fda8d02f0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TOP_Module_tb_behav xil_defaultlib.TOP_Module_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 2816d65bd2e44888979d0d8fda8d02f0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TOP_Module_tb_behav xil_defaultlib.TOP_Module_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MULTIPLEXER
+Compiling module xil_defaultlib.TOP_Module
+Compiling module xil_defaultlib.TOP_Module_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TOP_Module_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TOP_Module_tb_behav -key {Behavioral:sim_1:Functional:TOP_Module_tb} -tclbatch {TOP_Module_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source TOP_Module_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 40 ns : File "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sim_1/new/TOP_Module_tb.v" Line 75
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TOP_Module_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 3561.359 ; gain = 0.000
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3561.359 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TOP_Module' [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v:4]
+INFO: [Synth 8-6157] synthesizing module 'MULTIPLEXER' [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v:89]
+INFO: [Synth 8-6155] done synthesizing module 'MULTIPLEXER' (1#1) [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v:89]
+WARNING: [Synth 8-3848] Net cat in module/entity TOP_Module does not have driver. [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v:10]
+WARNING: [Synth 8-3848] Net an in module/entity TOP_Module does not have driver. [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v:11]
+WARNING: [Synth 8-3848] Net dp in module/entity TOP_Module does not have driver. [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'TOP_Module' (2#1) [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v:4]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port led[7]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port led[6]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port led[5]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port led[4]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port led[3]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port led[2]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port led[1]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port cat[6]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port cat[5]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port cat[4]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port cat[3]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port cat[2]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port cat[1]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port cat[0]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port an[3]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port an[2]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port an[1]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port an[0]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port dp
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port sw[7]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port sw[6]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port sw[5]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port sw[4]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port btn[3]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port btn[2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 3561.359 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 3561.359 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 3561.359 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/akcil/Downloads/Nexys-4-DDR-Master.xdc]
+Finished Parsing XDC File [C:/Users/akcil/Downloads/Nexys-4-DDR-Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 3997.633 ; gain = 436.273
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.runs/synth_1
+
+launch_runs synth_1 -jobs 6
+[Thu Oct 27 10:13:23 2022] Launched synth_1...
+Run output will be captured here: C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.runs/synth_1/runme.log
+current_design synth_1
+refresh_design
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/akcil/Downloads/Nexys-4-DDR-Master.xdc]
+Finished Parsing XDC File [C:/Users/akcil/Downloads/Nexys-4-DDR-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 4029.293 ; gain = 17.555
+launch_runs impl_1 -jobs 6
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4029.293 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 4029.293 ; gain = 0.000
+[Thu Oct 27 10:20:59 2022] Launched impl_1...
+Run output will be captured here: C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.runs/impl_1/runme.log
+current_design impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -datasheet -name timing_6
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+refresh_design
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 4029.293 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 4029.293 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 4029.293 ; gain = 0.000
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -datasheet -name timing_1
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_utilization -name utilization_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.runs/synth_1
+
+launch_runs synth_1 -jobs 6
+[Thu Oct 27 10:26:59 2022] Launched synth_1...
+Run output will be captured here: C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Oct 27 10:27:31 2022] Launched impl_1...
+Run output will be captured here: C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.runs/impl_1/runme.log
+current_design synth_1
+refresh_design
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/akcil/Downloads/Nexys-4-DDR-Master.xdc]
+Finished Parsing XDC File [C:/Users/akcil/Downloads/Nexys-4-DDR-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 4029.293 ; gain = 0.000
+current_design impl_1
+refresh_design
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 4029.293 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 4029.293 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 4029.293 ; gain = 0.000
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -datasheet -name timing_1
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_Module_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TOP_Module_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DEMULTIPLEXER
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND
+INFO: [VRFC 10-311] analyzing module OR
+INFO: [VRFC 10-311] analyzing module NOT
+INFO: [VRFC 10-311] analyzing module NAND
+INFO: [VRFC 10-311] analyzing module NOR
+INFO: [VRFC 10-311] analyzing module EXNOR
+INFO: [VRFC 10-311] analyzing module EXOR
+INFO: [VRFC 10-311] analyzing module TRI
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_Module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sim_1/new/TOP_Module_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_Module_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+"xelab -wto 2816d65bd2e44888979d0d8fda8d02f0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TOP_Module_tb_behav xil_defaultlib.TOP_Module_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 2816d65bd2e44888979d0d8fda8d02f0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TOP_Module_tb_behav xil_defaultlib.TOP_Module_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.NOT
+Compiling module xil_defaultlib.AND
+Compiling module xil_defaultlib.TRI
+Compiling module xil_defaultlib.DEMULTIPLEXER
+Compiling module xil_defaultlib.TOP_Module
+Compiling module xil_defaultlib.TOP_Module_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TOP_Module_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TOP_Module_tb_behav -key {Behavioral:sim_1:Functional:TOP_Module_tb} -tclbatch {TOP_Module_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source TOP_Module_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TOP_Module_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 4029.293 ; gain = 0.000
+current_design rtl_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 4029.293 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TOP_Module' [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v:4]
+INFO: [Synth 8-6157] synthesizing module 'DEMULTIPLEXER' [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v:141]
+INFO: [Synth 8-6157] synthesizing module 'NOT' [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'NOT' (1#1) [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:29]
+WARNING: [Synth 8-6104] Input port 'S' has an internal driver [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v:149]
+WARNING: [Synth 8-6104] Input port 'S' has an internal driver [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v:150]
+INFO: [Synth 8-6157] synthesizing module 'AND' [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'AND' (2#1) [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:5]
+INFO: [Synth 8-6157] synthesizing module 'TRI' [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:109]
+INFO: [Synth 8-6155] done synthesizing module 'TRI' (3#1) [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:109]
+WARNING: [Synth 8-3848] Net O in module/entity DEMULTIPLEXER does not have driver. [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v:144]
+WARNING: [Synth 8-3848] Net w1 in module/entity DEMULTIPLEXER does not have driver. [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v:147]
+WARNING: [Synth 8-3848] Net w2 in module/entity DEMULTIPLEXER does not have driver. [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v:147]
+INFO: [Synth 8-6155] done synthesizing module 'DEMULTIPLEXER' (4#1) [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v:141]
+WARNING: [Synth 8-3848] Net cat in module/entity TOP_Module does not have driver. [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v:10]
+WARNING: [Synth 8-3848] Net an in module/entity TOP_Module does not have driver. [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v:11]
+WARNING: [Synth 8-3848] Net dp in module/entity TOP_Module does not have driver. [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'TOP_Module' (5#1) [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v:4]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port led[7]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port led[6]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port led[5]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port led[4]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port cat[6]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port cat[5]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port cat[4]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port cat[3]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port cat[2]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port cat[1]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port cat[0]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port an[3]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port an[2]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port an[1]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port an[0]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port dp
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port sw[7]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port sw[6]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port sw[5]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port sw[4]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port sw[3]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port sw[2]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port sw[1]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port btn[3]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port btn[2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 4029.293 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 4029.293 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 4029.293 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/akcil/Downloads/Nexys-4-DDR-Master.xdc]
+Finished Parsing XDC File [C:/Users/akcil/Downloads/Nexys-4-DDR-Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 4029.293 ; gain = 0.000
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 4029.293 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TOP_Module' [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v:4]
+INFO: [Synth 8-6157] synthesizing module 'DEMULTIPLEXER' [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v:141]
+INFO: [Synth 8-6157] synthesizing module 'NOT' [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'NOT' (1#1) [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:29]
+WARNING: [Synth 8-6104] Input port 'S' has an internal driver [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v:148]
+WARNING: [Synth 8-6104] Input port 'S' has an internal driver [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v:149]
+INFO: [Synth 8-6157] synthesizing module 'AND' [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'AND' (2#1) [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:5]
+INFO: [Synth 8-6157] synthesizing module 'TRI' [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:109]
+INFO: [Synth 8-6155] done synthesizing module 'TRI' (3#1) [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:109]
+WARNING: [Synth 8-3848] Net O in module/entity DEMULTIPLEXER does not have driver. [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v:144]
+WARNING: [Synth 8-3848] Net w1 in module/entity DEMULTIPLEXER does not have driver. [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v:147]
+WARNING: [Synth 8-3848] Net w2 in module/entity DEMULTIPLEXER does not have driver. [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v:147]
+INFO: [Synth 8-6155] done synthesizing module 'DEMULTIPLEXER' (4#1) [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v:141]
+WARNING: [Synth 8-3848] Net cat in module/entity TOP_Module does not have driver. [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v:10]
+WARNING: [Synth 8-3848] Net an in module/entity TOP_Module does not have driver. [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v:11]
+WARNING: [Synth 8-3848] Net dp in module/entity TOP_Module does not have driver. [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'TOP_Module' (5#1) [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v:4]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port led[7]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port led[6]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port led[5]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port led[4]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port cat[6]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port cat[5]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port cat[4]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port cat[3]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port cat[2]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port cat[1]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port cat[0]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port an[3]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port an[2]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port an[1]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port an[0]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port dp
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port sw[7]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port sw[6]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port sw[5]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port sw[4]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port sw[3]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port sw[2]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port sw[1]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port btn[3]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port btn[2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 4029.293 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 4029.293 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 4029.293 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/akcil/Downloads/Nexys-4-DDR-Master.xdc]
+Finished Parsing XDC File [C:/Users/akcil/Downloads/Nexys-4-DDR-Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 4060.438 ; gain = 31.145
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 4079.809 ; gain = 15.832
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TOP_Module' [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v:4]
+INFO: [Synth 8-6157] synthesizing module 'DEMULTIPLEXER' [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v:141]
+INFO: [Synth 8-6157] synthesizing module 'NOT' [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'NOT' (1#1) [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:29]
+WARNING: [Synth 8-6104] Input port 'S' has an internal driver [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v:149]
+WARNING: [Synth 8-6104] Input port 'S' has an internal driver [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v:150]
+INFO: [Synth 8-6157] synthesizing module 'AND' [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'AND' (2#1) [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:5]
+INFO: [Synth 8-6157] synthesizing module 'TRI' [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:109]
+INFO: [Synth 8-6155] done synthesizing module 'TRI' (3#1) [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:109]
+WARNING: [Synth 8-3848] Net O in module/entity DEMULTIPLEXER does not have driver. [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v:144]
+WARNING: [Synth 8-3848] Net w1 in module/entity DEMULTIPLEXER does not have driver. [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v:147]
+WARNING: [Synth 8-3848] Net w2 in module/entity DEMULTIPLEXER does not have driver. [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v:147]
+INFO: [Synth 8-6155] done synthesizing module 'DEMULTIPLEXER' (4#1) [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v:141]
+WARNING: [Synth 8-3848] Net cat in module/entity TOP_Module does not have driver. [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v:10]
+WARNING: [Synth 8-3848] Net an in module/entity TOP_Module does not have driver. [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v:11]
+WARNING: [Synth 8-3848] Net dp in module/entity TOP_Module does not have driver. [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'TOP_Module' (5#1) [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v:4]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port led[7]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port led[6]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port led[5]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port led[4]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port cat[6]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port cat[5]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port cat[4]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port cat[3]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port cat[2]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port cat[1]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port cat[0]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port an[3]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port an[2]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port an[1]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port an[0]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port dp
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port sw[7]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port sw[6]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port sw[5]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port sw[4]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port sw[3]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port sw[2]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port sw[1]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port btn[3]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port btn[2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 4079.832 ; gain = 15.855
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 4088.781 ; gain = 24.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 4088.781 ; gain = 24.805
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/akcil/Downloads/Nexys-4-DDR-Master.xdc]
+Finished Parsing XDC File [C:/Users/akcil/Downloads/Nexys-4-DDR-Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 4088.781 ; gain = 24.805
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_Module_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TOP_Module_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DEMULTIPLEXER
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND
+INFO: [VRFC 10-311] analyzing module OR
+INFO: [VRFC 10-311] analyzing module NOT
+INFO: [VRFC 10-311] analyzing module NAND
+INFO: [VRFC 10-311] analyzing module NOR
+INFO: [VRFC 10-311] analyzing module EXNOR
+INFO: [VRFC 10-311] analyzing module EXOR
+INFO: [VRFC 10-311] analyzing module TRI
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_Module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sim_1/new/TOP_Module_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_Module_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+"xelab -wto 2816d65bd2e44888979d0d8fda8d02f0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TOP_Module_tb_behav xil_defaultlib.TOP_Module_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 2816d65bd2e44888979d0d8fda8d02f0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TOP_Module_tb_behav xil_defaultlib.TOP_Module_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.NOT
+Compiling module xil_defaultlib.AND
+Compiling module xil_defaultlib.TRI
+Compiling module xil_defaultlib.DEMULTIPLEXER
+Compiling module xil_defaultlib.TOP_Module
+Compiling module xil_defaultlib.TOP_Module_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TOP_Module_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TOP_Module_tb_behav -key {Behavioral:sim_1:Functional:TOP_Module_tb} -tclbatch {TOP_Module_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source TOP_Module_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TOP_Module_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_Module_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TOP_Module_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DEMULTIPLEXER
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND
+INFO: [VRFC 10-311] analyzing module OR
+INFO: [VRFC 10-311] analyzing module NOT
+INFO: [VRFC 10-311] analyzing module NAND
+INFO: [VRFC 10-311] analyzing module NOR
+INFO: [VRFC 10-311] analyzing module EXNOR
+INFO: [VRFC 10-311] analyzing module EXOR
+INFO: [VRFC 10-311] analyzing module TRI
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_Module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sim_1/new/TOP_Module_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_Module_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+"xelab -wto 2816d65bd2e44888979d0d8fda8d02f0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TOP_Module_tb_behav xil_defaultlib.TOP_Module_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 2816d65bd2e44888979d0d8fda8d02f0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TOP_Module_tb_behav xil_defaultlib.TOP_Module_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.NOT
+Compiling module xil_defaultlib.AND
+Compiling module xil_defaultlib.TRI
+Compiling module xil_defaultlib.DEMULTIPLEXER
+Compiling module xil_defaultlib.TOP_Module
+Compiling module xil_defaultlib.TOP_Module_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TOP_Module_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TOP_Module_tb_behav -key {Behavioral:sim_1:Functional:TOP_Module_tb} -tclbatch {TOP_Module_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source TOP_Module_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TOP_Module_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_Module_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TOP_Module_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DEMULTIPLEXER
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND
+INFO: [VRFC 10-311] analyzing module OR
+INFO: [VRFC 10-311] analyzing module NOT
+INFO: [VRFC 10-311] analyzing module NAND
+INFO: [VRFC 10-311] analyzing module NOR
+INFO: [VRFC 10-311] analyzing module EXNOR
+INFO: [VRFC 10-311] analyzing module EXOR
+INFO: [VRFC 10-311] analyzing module TRI
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_Module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sim_1/new/TOP_Module_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_Module_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+"xelab -wto 2816d65bd2e44888979d0d8fda8d02f0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TOP_Module_tb_behav xil_defaultlib.TOP_Module_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 2816d65bd2e44888979d0d8fda8d02f0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TOP_Module_tb_behav xil_defaultlib.TOP_Module_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.NOT
+Compiling module xil_defaultlib.AND
+Compiling module xil_defaultlib.TRI
+Compiling module xil_defaultlib.DEMULTIPLEXER
+Compiling module xil_defaultlib.TOP_Module
+Compiling module xil_defaultlib.TOP_Module_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TOP_Module_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TOP_Module_tb_behav -key {Behavioral:sim_1:Functional:TOP_Module_tb} -tclbatch {TOP_Module_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source TOP_Module_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TOP_Module_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 4088.781 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TOP_Module' [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v:4]
+INFO: [Synth 8-6157] synthesizing module 'DEMULTIPLEXER' [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v:141]
+INFO: [Synth 8-6157] synthesizing module 'NOT' [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'NOT' (1#1) [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:29]
+INFO: [Synth 8-6157] synthesizing module 'AND' [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'AND' (2#1) [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:5]
+INFO: [Synth 8-6157] synthesizing module 'TRI' [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:110]
+INFO: [Synth 8-6155] done synthesizing module 'TRI' (3#1) [C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v:110]
+INFO: [Synth 8-6155] done synthesizing module 'DEMULTIPLEXER' (4#1) [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v:141]
+WARNING: [Synth 8-3848] Net cat in module/entity TOP_Module does not have driver. [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v:10]
+WARNING: [Synth 8-3848] Net an in module/entity TOP_Module does not have driver. [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v:11]
+WARNING: [Synth 8-3848] Net dp in module/entity TOP_Module does not have driver. [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'TOP_Module' (5#1) [C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v:4]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port led[7]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port led[6]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port led[5]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port led[4]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port cat[6]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port cat[5]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port cat[4]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port cat[3]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port cat[2]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port cat[1]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port cat[0]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port an[3]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port an[2]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port an[1]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port an[0]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port dp
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port sw[7]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port sw[6]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port sw[5]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port sw[4]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port sw[3]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port sw[2]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port sw[1]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port btn[3]
+WARNING: [Synth 8-3331] design TOP_Module has unconnected port btn[2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 4088.781 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 4088.781 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 4088.781 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/akcil/Downloads/Nexys-4-DDR-Master.xdc]
+Finished Parsing XDC File [C:/Users/akcil/Downloads/Nexys-4-DDR-Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 4088.781 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TOP_Module_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TOP_Module_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DEMULTIPLEXER
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.srcs/sources_1/new/SSI_Library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND
+INFO: [VRFC 10-311] analyzing module OR
+INFO: [VRFC 10-311] analyzing module NOT
+INFO: [VRFC 10-311] analyzing module NAND
+INFO: [VRFC 10-311] analyzing module NOR
+INFO: [VRFC 10-311] analyzing module EXNOR
+INFO: [VRFC 10-311] analyzing module EXOR
+INFO: [VRFC 10-311] analyzing module TRI
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/TOP_Module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_Module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sim_1/new/TOP_Module_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_Module_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+"xelab -wto 2816d65bd2e44888979d0d8fda8d02f0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TOP_Module_tb_behav xil_defaultlib.TOP_Module_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 2816d65bd2e44888979d0d8fda8d02f0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TOP_Module_tb_behav xil_defaultlib.TOP_Module_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.NOT
+Compiling module xil_defaultlib.AND
+Compiling module xil_defaultlib.TRI
+Compiling module xil_defaultlib.DEMULTIPLEXER
+Compiling module xil_defaultlib.TOP_Module
+Compiling module xil_defaultlib.TOP_Module_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TOP_Module_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TOP_Module_tb_behav -key {Behavioral:sim_1:Functional:TOP_Module_tb} -tclbatch {TOP_Module_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source TOP_Module_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TOP_Module_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 4088.781 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.runs/synth_1
+
+launch_runs synth_1 -jobs 6
+[Thu Oct 27 11:03:31 2022] Launched synth_1...
+Run output will be captured here: C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Oct 27 11:04:38 2022] Launched impl_1...
+Run output will be captured here: C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.runs/impl_1/runme.log
+current_design synth_1
+refresh_design
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/akcil/Downloads/Nexys-4-DDR-Master.xdc]
+Finished Parsing XDC File [C:/Users/akcil/Downloads/Nexys-4-DDR-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 4088.781 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 27 11:07:43 2022...

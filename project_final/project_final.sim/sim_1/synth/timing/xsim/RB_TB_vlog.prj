@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"RB_TB_time_synth.v" \
+"../../../../../Final_v2.srcs/sim_1/new/RB_TB.v" \
+
+# Do not sort compile order
+nosort

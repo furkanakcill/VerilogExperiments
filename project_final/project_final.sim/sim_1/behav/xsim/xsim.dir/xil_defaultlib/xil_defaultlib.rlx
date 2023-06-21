@@ -1,0 +1,15 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/SSTU Dosyalar/project_final/project_final.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+C:/SSTU Dosyalar/project_final/project_final.srcs/sim_1/new/TOP_TB.v,1673781948,verilog,,,,TOP_TB,,,,,,,,
+C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/imports/StdLib/Arithmetic.v,1673641124,verilog,,C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/CU.v,,CGEN;CLA;FA;HA;RCA,,,,,,,,
+C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/imports/StdLib/MSI.v,1673694288,verilog,,C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/RB.v,,DEC;DEMUX;MUX;MUX_BUS;PRI_ENC,,,,,,,,
+C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/imports/StdLib/SSI.v,1671663958,verilog,,C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/SUB_ALU.v,,AND;BITWISE_NOT;BITWISE_TRI;NAND;NOR;NOT;OR;REDUCTION_AND;REDUCTION_NAND;REDUCTION_NOR;REDUCTION_OR;REDUCTION_XNOR;REDUCTION_XOR;TRI;XNOR;XOR,,,,,,,,
+C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/ALU.v,1673643198,verilog,,C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/imports/StdLib/Arithmetic.v,,ALU,,,,,,,,
+C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/CU.v,1673781432,verilog,,C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/imports/StdLib/MSI.v,,CU,,,,,,,,
+C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/RB.v,1673768466,verilog,,C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/imports/StdLib/SSI.v,,RB,,,,,,,,
+C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/SUB_ALU.v,1673698944,verilog,,C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/SUB_RB.v,,BITWISE_AND;BITWISE_XOR;CIRCULAR_LSHIFT;MUX_32x8;MUX_4x1;SUB_ALU;ZERO_COMPARE,,,,,,,,
+C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/SUB_RB.v,1673701582,verilog,,C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/TOP.v,,REG8;SUB_RB,,,,,,,,
+C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/TOP.v,1673630938,verilog,,C:/SSTU Dosyalar/project_final/project_final.srcs/sim_1/new/TOP_TB.v,,TOP,,,,,,,,

@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Jan 11 08:14:16 2023
+# Process ID: 20228
+# Current directory: C:/SSTU Dosyalar/project_final
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17744 C:\SSTU Dosyalar\project_final\project_final.xpr
+# Log file: C:/SSTU Dosyalar/project_final/vivado.log
+# Journal file: C:/SSTU Dosyalar/project_final\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/SSTU Dosyalar/project_final/project_final.xpr}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/SSTU Dosyalar/project_final/project_final.srcs/sim_1/imports/final_project/tb_TOP_behav.wcfg}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/SSTU Dosyalar/project_final/project_final.srcs/sim_1/imports/final_project/tb_TOP_behav.wcfg}}
+archive_project {C:/SSTU Dosyalar/project_finallllllllll.xpr.zip} -temp_dir {C:/SSTU Dosyalar/project_final/.Xil/Vivado-20228-Akcil} -force -include_local_ip_cache

@@ -1,0 +1,19 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../exp8.srcs/sources_1/ip/BLK_IMG/sim/BLK_IMG.v" \
+"../../../../exp8.srcs/sources_1/ip/BLK_OUT/sim/BLK_OUT.v" \
+"../../../../exp8.srcs/sources_1/imports/StdLib/Arithmetic.v" \
+"../../../../exp8.srcs/sources_1/imports/StdLib/Arithmetic_Header.v" \
+"../../../../exp8.srcs/sources_1/imports/StdLib/MSI.v" \
+"../../../../exp8.srcs/sources_1/imports/StdLib/MSI_Header.v" \
+"../../../../exp8.srcs/sources_1/new/Required.v" \
+"../../../../exp8.srcs/sources_1/imports/StdLib/SSI.v" \
+"../../../../exp8.srcs/sources_1/imports/StdLib/SSI_Header.v" \
+"../../../../exp8.srcs/sim_1/new/MULTB_TB.v" \
+"../../../../exp8.srcs/sim_1/new/TOP_TB.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,185 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Oct 29 17:51:56 2022
+# Process ID: 5856
+# Current directory: C:/SSTU Dosyalar/project_experiment_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18172 C:\SSTU Dosyalar\project_experiment_3\project_experiment_3.xpr
+# Log file: C:/SSTU Dosyalar/project_experiment_3/vivado.log
+# Journal file: C:/SSTU Dosyalar/project_experiment_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.xpr}
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse {{C:/Users/akcil/OneDrive/Masaüstü/Digital Sys. Dsg. App/Kodlar/sstu 3 testbench.v}}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+source experiment3_tb.tcl
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+add_files -fileset constrs_1 -norecurse C:/Users/akcil/Downloads/Nexys-4-DDR-Master.xdc
+import_files -fileset constrs_1 C:/Users/akcil/Downloads/Nexys-4-DDR-Master.xdc
+refresh_design
+refresh_design
+close_design
+synth_design -rtl -name rtl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+close_design
+open_run impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -datasheet -name timing_1
+report_utilization -name utilization_1
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+refresh_design
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -datasheet -name timing_1
+report_utilization -name utilization_1
+get_cells
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+refresh_design
+reset_run impl_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+close_design
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+open_run impl_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+open_run synth_1 -name synth_1
+close_design
+open_run impl_1
+startgroup 
+set_property is_bel_fixed false [get_cells [list f2_OBUF_inst_i_1]]
+set_property is_loc_fixed false [get_cells [list f2_OBUF_inst_i_1]]
+endgroup
+startgroup
+place_cell f2_OBUF_inst_i_1 SLICE_X13Y67/B6LUT
+endgroup
+startgroup
+place_cell f2_OBUF_inst_i_1 SLICE_X13Y67/A6LUT
+endgroup
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+set_property target_constrs_file {C:/SSTU Dosyalar/project_experiment_3/project_experiment_3.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc} [current_fileset -constrset]
+save_constraints -force
+refresh_design
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -datasheet -name timing_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+close_design
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+open_run impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -datasheet -name timing_1
+launch_simulation -mode post-implementation -type timing
+source experiment3_tb.tcl
+close_sim
+launch_simulation -mode post-implementation -type timing
+source experiment3_tb.tcl
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -datasheet -name timing_2
+current_sim simulation_1
+close_sim
+close_sim
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw
+refresh_design
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top with_decoder [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+import_files -norecurse {{C:/SSTU Dosyalar/project_experiment_2/project_experiment_2.srcs/sources_1/new/MSI_Library.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+source experiment3_tb.tcl
+synth_design -rtl -name rtl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+current_design impl_1
+refresh_design
+open_run synth_1 -name synth_1
+current_design impl_1
+report_utilization -name utilization_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -datasheet -name timing_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+close_design
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+close_design
+open_run impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -datasheet -name timing_1
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top with_MUX [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+current_design rtl_1
+refresh_design
+close_sim
+launch_simulation
+source experiment3_tb.tcl
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+current_design impl_1
+refresh_design
+open_run synth_1 -name synth_1
+current_design impl_1
+report_utilization -name utilization_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -datasheet -name timing_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+current_design synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+refresh_design
+current_design impl_1
+refresh_design
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -datasheet -name timing_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+close_sim

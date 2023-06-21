@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Oct 16 14:32:01 2022
+# Process ID: 11388
+# Current directory: C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.sim/sim_1/synth/timing/xsim
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8684 C:\SSTU Dosyalar\project_experiment_1\project_experiment_1.sim\sim_1\synth\timing\xsim\AND_tb_time_synth.wdb
+# Log file: C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.sim/sim_1/synth/timing/xsim/vivado.log
+# Journal file: C:/SSTU Dosyalar/project_experiment_1/project_experiment_1.sim/sim_1/synth/timing/xsim\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_wave_database {C:\SSTU Dosyalar\project_experiment_1\project_experiment_1.sim\sim_1\synth\timing\xsim\AND_tb_time_synth.wdb}
+close_sim

@@ -1,0 +1,54 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Oct 20 14:36:09 2022
+# Process ID: 4172
+# Current directory: C:/SSTU Dosyalar/project_experiment1_V2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13892 C:\SSTU Dosyalar\project_experiment1_V2\project_experiment1_V2.xpr
+# Log file: C:/SSTU Dosyalar/project_experiment1_V2/vivado.log
+# Journal file: C:/SSTU Dosyalar/project_experiment1_V2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/SSTU Dosyalar/project_experiment1_V2/project_experiment1_V2.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+synth_design -rtl -name rtl_1
+launch_simulation
+launch_simulation
+launch_simulation
+source Top_Module_tb.tcl
+close_sim
+launch_simulation
+source Top_Module_tb.tcl
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_simulation -mode post-implementation -type timing
+source Top_Module_tb.tcl
+close_sim
+launch_simulation -mode post-implementation -type timing
+source Top_Module_tb.tcl
+close_sim
+launch_simulation -mode post-implementation -type timing
+source Top_Module_tb.tcl
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+add_files -fileset constrs_1 -norecurse C:/Users/akcil/Downloads/Nexys-4-DDR-Master.xdc
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+refresh_design
+open_run synth_1 -name synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+launch_simulation -mode post-synthesis -type timing
+source Top_Module_tb.tcl
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -datasheet -name timing_1
+close_sim
+current_sim simulation_5
+close_sim
+close_sim

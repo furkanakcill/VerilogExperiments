@@ -1,0 +1,53 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/imports/StdLib/Arithmetic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HA
+INFO: [VRFC 10-311] analyzing module FA
+INFO: [VRFC 10-311] analyzing module RCA
+INFO: [VRFC 10-311] analyzing module CGEN
+INFO: [VRFC 10-311] analyzing module CLA
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/CU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/imports/StdLib/MSI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DEC
+INFO: [VRFC 10-311] analyzing module PRI_ENC
+INFO: [VRFC 10-311] analyzing module MUX
+INFO: [VRFC 10-311] analyzing module DEMUX
+INFO: [VRFC 10-311] analyzing module MUX_BUS
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/RB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/imports/StdLib/SSI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AND
+INFO: [VRFC 10-311] analyzing module OR
+INFO: [VRFC 10-311] analyzing module NOT
+INFO: [VRFC 10-311] analyzing module NAND
+INFO: [VRFC 10-311] analyzing module NOR
+INFO: [VRFC 10-311] analyzing module XOR
+INFO: [VRFC 10-311] analyzing module XNOR
+INFO: [VRFC 10-311] analyzing module TRI
+INFO: [VRFC 10-311] analyzing module REDUCTION_AND
+INFO: [VRFC 10-311] analyzing module REDUCTION_OR
+INFO: [VRFC 10-311] analyzing module BITWISE_NOT
+INFO: [VRFC 10-311] analyzing module REDUCTION_NAND
+INFO: [VRFC 10-311] analyzing module REDUCTION_NOR
+INFO: [VRFC 10-311] analyzing module REDUCTION_XOR
+INFO: [VRFC 10-311] analyzing module REDUCTION_XNOR
+INFO: [VRFC 10-311] analyzing module BITWISE_TRI
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/SUB_ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BITWISE_AND
+INFO: [VRFC 10-311] analyzing module BITWISE_XOR
+INFO: [VRFC 10-311] analyzing module CIRCULAR_LSHIFT
+INFO: [VRFC 10-311] analyzing module ZERO_COMPARE
+INFO: [VRFC 10-311] analyzing module MUX_4x1
+INFO: [VRFC 10-311] analyzing module MUX_32x8
+INFO: [VRFC 10-311] analyzing module SUB_ALU
+INFO: [VRFC 10-2458] undeclared symbol Z, assumed default net type wire [C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/SUB_ALU.v:125]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/SUB_RB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG8
+INFO: [VRFC 10-311] analyzing module SUB_RB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_final/project_final.srcs/sources_1/new/TOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_final/project_final.srcs/sim_1/new/TOP_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP_TB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_final/project_final.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

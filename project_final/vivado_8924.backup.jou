@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Jan  7 19:49:07 2023
+# Process ID: 8924
+# Current directory: C:/SSTU Dosyalar/project_final
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23248 C:\SSTU Dosyalar\project_final\project_final.xpr
+# Log file: C:/SSTU Dosyalar/project_final/vivado.log
+# Journal file: C:/SSTU Dosyalar/project_final\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/SSTU Dosyalar/project_final/project_final.xpr}
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/akcil/OneDrive/Masaüstü/Digital Sys. Dsg. App/Delivarables/final_project/archive_project_summary.txt}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/akcil/OneDrive/Masaüstü/Digital Sys. Dsg. App/Delivarables/final_project/archive_project_summary.txt}}
+refresh_design

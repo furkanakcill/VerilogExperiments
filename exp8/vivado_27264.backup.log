@@ -1,0 +1,46 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Dec 25 16:54:17 2022
+# Process ID: 27264
+# Current directory: C:/Users/akare/Desktop/lojiklab/project/exp8
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23104 C:\Users\akare\Desktop\lojiklab\project\exp8\exp8.xpr
+# Log file: C:/Users/akare/Desktop/lojiklab/project/exp8/vivado.log
+# Journal file: C:/Users/akare/Desktop/lojiklab/project/exp8\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/akare/Desktop/lojiklab/project/exp8/exp8.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+archive_project C:/Users/akare/Desktop/exp8.xpr.zip -temp_dir C:/Users/akare/Desktop/lojiklab/project/exp8/.Xil/Vivado-27264-AKARE_A17 -force -exclude_run_results -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/akare/Desktop/lojiklab/project/exp8/.Xil/Vivado-27264-AKARE_A17' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/akare/Desktop/lojiklab/project/exp8/.Xil/Vivado-27264-AKARE_A17/PrjAr/_X_'.
+INFO: [Coretcl 2-135] resetting runs for excluding generated files from archive...
+INFO: [Coretcl 2-133] re-setting run 'synth_1'...
+WARNING: [Coretcl 2-105] Run 'BLK_IMG_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'BLK_IMG_synth_1'...
+WARNING: [Coretcl 2-105] Run 'BLK_OUT_synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'BLK_OUT_synth_1'...
+INFO: [Coretcl 2-133] re-setting run 'impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'BLK_IMG_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'BLK_OUT_impl_1'...
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'BLK_IMG'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'BLK_IMG'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'BLK_OUT'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'BLK_OUT'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'

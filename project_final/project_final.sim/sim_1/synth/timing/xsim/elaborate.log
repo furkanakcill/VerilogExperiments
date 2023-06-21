@@ -1,0 +1,39 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 02ac76b1841346959ae0cd6725447638 --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot RB_TB_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.RB_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "RB_TB_time_synth.sdf", for root module "RB_TB/uut".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "RB_TB_time_synth.sdf", for root module "RB_TB/uut".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.FDCE_default
+Compiling module xil_defaultlib.REG8
+Compiling module xil_defaultlib.REG8_0
+Compiling module simprims_ver.MUXF7
+Compiling module xil_defaultlib.REG8_1
+Compiling module xil_defaultlib.REG8_2
+Compiling module xil_defaultlib.REG8_3
+Compiling module xil_defaultlib.REG8_4
+Compiling module xil_defaultlib.REG8_5
+Compiling module xil_defaultlib.REG8_6
+Compiling module xil_defaultlib.REG8_7
+Compiling module xil_defaultlib.REG8_8
+Compiling module xil_defaultlib.REG8_9
+Compiling module xil_defaultlib.REG8_10
+Compiling module xil_defaultlib.REG8_11
+Compiling module xil_defaultlib.REG8_12
+Compiling module xil_defaultlib.REG8_13
+Compiling module xil_defaultlib.REG8_14
+Compiling module xil_defaultlib.RB
+Compiling module xil_defaultlib.RB_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot RB_TB_time_synth

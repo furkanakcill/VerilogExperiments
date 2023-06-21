@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment1_V2/project_experiment1_V2.sim/sim_1/synth/timing/xsim/Top_Module_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXNOR
+INFO: [VRFC 10-311] analyzing module EXOR
+INFO: [VRFC 10-311] analyzing module TOP_Module
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/SSTU Dosyalar/project_experiment1_V2/project_experiment1_V2.srcs/sim_1/new/TOP_Module_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top_Module_tb
